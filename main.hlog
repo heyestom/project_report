@@ -1,0 +1,10 @@
+This is TeX2page, Version 20070609 (MzScheme 4.1.2, unix)
+(main.tex (abstract/abstract.tex) (intro/intro.tex [0]) (blazon/blazon.tex
+[1]) (grammar/grammar.tex [2])) [3]
+Document title not determined
+Last page not determined
+Last modification time not determined
+Table of contents not determined
+Rerun: tex2page main.tex
+If problem persists, check for missing \label's and \bibitem's
+Output written on main.html, ... (4 pages).

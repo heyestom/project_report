@@ -1,0 +1,84 @@
+Writing a grammar and Parser for Blazon
+Thomas Heyes
+April 5, 2013
+
+Abstract
+Blazon is the semi-formal language of family crest and heraldry, dating
+back to the twelfth century. Using a well structured grammar to describe a
+coat of arms in a top down approach the language provides a robust yet ﬂexible way to deﬁne a textual description of what is naturally a very graphical
+subject. Using a test-driven development model I have produced a project
+which is capable of parsing a large subset of Blazon. Encompassing several ﬁelds of Computer Science ranging from parsing to HTML5 graphics
+the application provides a platform that demonstrates how modern concepts
+and technologies can be used to represent a subject that pre-dates them by
+centuries.
+Firstly giving a brief background and description of the language of Blazon, this report goes onto describes both how the Blazon parsing application
+works as well as and how the project was implemented and tested. From a
+simple shield of a single colour through partitioning into sections and sub
+partitioning as well as covering diﬀerent line-types before heading onto geometric charges, honourable charges and the rule of tincture before ﬁnally
+discussing semi-formal charges.
+After thoroughly describing the language I go onto discuss the implementation of the project using test driven development. Producing lots of
+iterations increasing the functionality of the project gradually and performing
+regression testing to ensure the soundness of my code base. Initially starting
+with a couple of Python script based prototypes I describe how the project
+was iteratively built into a fully ﬂedged web application over the course of
+the academic year. Given more time I would attempt to expand the project
+further into parsing and drawing a larger subset of Blazon with features such
+as Counter Charging and combining shields with Quartering.
+
+Chapter 1
+Introduction
+My project was to Write a Grammar and Parser for Blazon. Another student
+project by Luke Torjussen done the year before my own had attempted, very
+successfully, to produce an application that both parsed and drew representations of Blazoned coats of arms. This prior project used a parse generator
+to handle the grammar, lexing and parsing of the language. It was my objective to see if performing the parsing by hand in my own application could
+realise a more complete representation of Blazon.
+Initially then my project was entirely based in tokenising, lexing, parsing and validating Blazon sentences. However my project grew later-on to
+also attempt to encompass producing a graphical representation of a parsed
+Blazon sentence as well as providing a plain English translation.
+
+Aims
+
+The aim of my project was to produce an application which upon receiving
+a Blazon sentence would ﬁrstly validate the sentence according to the rules
+of the Blazon language and then produce an English translation.
+
+Achievable
+
+Chapter 2
+What is Blazon?
+Blazon is the language of heraldry and family crests, it dates back to the
+twelfth century and provides a strict set of rules about how to produce a
+coat of arms.
+
+Some Terminology
+
+Blazon, like any other language, has some unique terminology used to address
+certain aspects of heraldry. Anyone attempting utilize the language will need
+to familiarise themselves with this terminology.
+
+The Seven Tinctures
+
+The most fundamental elements of Blazon are the Tinctures. Tinctures are
+the set of colours allowed in coats of arms.
+It is important to realise that the Tinctures don’t deﬁne the tone or shade
+of colour just which colour the current section of the of the shield should be.
+Whist Blazon is not a truly natural language
+
+How to Blazon a Coat of Arms
+
+Partitioning a Field
+
+Sub-Partitioning
+
+Chapter 3
+Deﬁning a Grammar for Blazon
+
+What is a grammar?
+
+Context Free Blazon
+
+
+Formatting Input
+
+
+Tokenizing Strings
