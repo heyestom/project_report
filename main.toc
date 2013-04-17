@@ -9,17 +9,18 @@
 \contentsline {section}{\numberline {2.3}Fields}{5}
 \contentsline {section}{\numberline {2.4}How to Blazon a Coat of Arms: Part One}{5}
 \contentsline {section}{\numberline {2.5}Partitioning a Field}{6}
-\contentsline {section}{\numberline {2.6}How to Blazon a Coat of Arms: Part Two}{9}
-\contentsline {section}{\numberline {2.7}Sub-Partitioning}{11}
-\contentsline {section}{\numberline {2.8}Line Types}{13}
-\contentsline {section}{\numberline {2.9}Directions and Sides}{13}
-\contentsline {section}{\numberline {2.10}Charges}{13}
-\contentsline {section}{\numberline {2.11}The Rule of Tincture}{13}
-\contentsline {chapter}{\numberline {3}Defining a Grammar for Blazon}{14}
-\contentsline {section}{\numberline {3.1}What is a grammar?}{14}
-\contentsline {section}{\numberline {3.2}Context Free Blazon}{14}
-\contentsline {section}{\numberline {3.3}Formatting Input}{14}
-\contentsline {section}{\numberline {3.4}Tokenizing Strings}{14}
-\contentsline {chapter}{\numberline {4}Parsing}{15}
-\contentsline {chapter}{\numberline {5}Graphical Representations}{16}
-\contentsline {chapter}{\numberline {6}Design}{17}
+\contentsline {section}{\numberline {2.6}How to Blazon a Coat of Arms: Part Two}{8}
+\contentsline {section}{\numberline {2.7}Sub-Partitioning}{10}
+\contentsline {section}{\numberline {2.8}How to Blazon a Coat of Arms: Part Three}{11}
+\contentsline {section}{\numberline {2.9}Line Types}{12}
+\contentsline {section}{\numberline {2.10}Directions and Sides}{12}
+\contentsline {section}{\numberline {2.11}Charges}{12}
+\contentsline {section}{\numberline {2.12}The Rule of Tincture}{12}
+\contentsline {chapter}{\numberline {3}Defining a Grammar for Blazon}{13}
+\contentsline {section}{\numberline {3.1}What is a grammar?}{13}
+\contentsline {section}{\numberline {3.2}Context Free Blazon}{13}
+\contentsline {section}{\numberline {3.3}Formatting Input}{13}
+\contentsline {section}{\numberline {3.4}Tokenizing Strings}{13}
+\contentsline {chapter}{\numberline {4}Parsing}{14}
+\contentsline {chapter}{\numberline {5}Graphical Representations}{15}
+\contentsline {chapter}{\numberline {6}Design}{16}
