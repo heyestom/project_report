@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.15)  17 APR 2013 17:27
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.15)  17 APR 2013 19:01
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -389,39 +389,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--196
 
  []
 
-[12]
+[12] [13]
 File: blazon/images/linetypes.eps Graphic file (type eps)
- <blazon/images/linetypes.eps> [13]) (./grammar/grammar.tex [14]
+ <blazon/images/linetypes.eps> [14]) (./grammar/grammar.tex [15]
 Chapter 3.
-) (./parsing/parsing.tex [15
+) (./parsing/parsing.tex [16
 
 ]
 Chapter 4.
-) (./graphics/graphics.tex [16
+) (./graphics/graphics.tex [17
 
 ]
 Chapter 5.
-) (./design/design.tex [17
+) (./design/design.tex [18
 
 ]
 Chapter 6.
-) (./bib/bib.tex [18
+) (./bib/bib.tex [19
 
 ]
 Overfull \hbox (36.7238pt too wide) in paragraph at lines 4--7
 []\OT1/cmr/m/n/12 The py-Bla-zon wiki, [][][][]
  []
 
-) [19
+) [20
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3788 strings out of 256217
- 53820 string characters out of 1917095
+ 3789 strings out of 256217
+ 53834 string characters out of 1917095
  122397 words of memory out of 1500000
- 6997 multiletter control sequences out of 10000+200000
+ 6998 multiletter control sequences out of 10000+200000
  9969 words of font info for 35 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,8n,46p,920b,383s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on main.dvi (21 pages, 55124 bytes).
+Output written on main.dvi (22 pages, 59440 bytes).

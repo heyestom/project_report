@@ -200,6 +200,10 @@ With Sub-Partitioning the set of valid Blazon sentences ceases to be finite, it 
 
 Blazon allows for Partitions to be patterned with different Line Types.  The line division through a Field when partitioning is implicitly a straight line however there are a set of pre-defined Line Types which can be used instead.  
 
+A Lint Type is declared in Blazon simply by stating the name of the Line Type desired immediately after a partition. For example \emph{Per Fess Embattled Argent and Sable} is the Blazon sentence for a Silver and Black shield divided horizontally with an \emph{"Embattled"} line, see figure 2.4.  
+
+Line Types can be applied to Sub-Partitions and its possible to have multiple Line Types in a single Blazon sentence. 
+
 \begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{blazon/images/linetypes.eps}
@@ -208,16 +212,30 @@ Blazon allows for Partitions to be patterned with different Line Types.  The lin
 \end{figure}
 
 
-
-\section{Directions and Sides}
-
 \section{Charges}
+Another powerful aspect of Blazon is the ability to place pictures, called Charges, onto a shield.  Charges can be placed onto any Field that has been Tinctured.  There are three subsets of Charge, the Honourable Charges, the Geometric Charges and Semi-formal Charges.
+
+The Geometric Charges are the most simple, they are the set of basic shapes such as a square and a circle.  The Honourable Charges are a set of predefined simple shapes some of which take after Partitions, such as \emph{"Bend"}.  The set of semi-formal charges contains everything that can be described textually, common examples are Lions and Eagles some royal Blazons have a crown as a Charge. 
+
+To define a crown in a Blazon sentence a quantifier pre-fix is used as a keyword immediately after the field the to be Charged is Tinctured. For example the Sentence \emph{"Vert a Crown Or"} Takes the implicit Field and Tinctures it \emph{Vert} before Charging the Field with a Crown Tinctured \emph{Or}, this would produce a green shield with a gold crown on it. 
+
+The size and position of a Charge is defined so that a Charge should take up as much space as possible without obscuring any other Charge or intersecting the perimeter of the Field it is being placed onto.  
+
+Its possible to have several instances of the same charge on a Field. There are defined ways to position such groupings of charges however there is some freedom for the artist to arrange groups of Charges differently especially if the area doesn't lend itself to the traditional placement, a very wide but short Field would better suit its Charges being placed in a straight line rather than the usual grouping.
+
+The prefix keyword can be a number or amount to define how many types of this Charge are present in this Field, \emph{Argent three Delfs Sable} would produce a silver shield with three black squares on it in a triangular pattern, one each in the  top corners and one centrally placed in toward the bottom. 
+
+It is even possible to have multiple groupings of different Charges on a Field.  In this case each grouping is treated like a Charge and no grouping is allowed to obscure the others.  
+
+Keywords do exist for more specific positioning of Charges such as \emph{"Beneath"} and \emph{"Above"} possible to 
+
 
 \section{The Rule of Tincture}
 
 
+\section{Directions and Sides}
 
-
+\section{Overall}
 
 %\begin{figure}[H]
 %\subfigure[\emph{"A more complicated."}]{\includegraphics[width=0.4\textwidth]{blazon/images/bendsinisterargentandvert.eps}}
