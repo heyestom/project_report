@@ -13,7 +13,7 @@ restricting the set of tinctures to total seven and maintaining a fairly low num
 Blazon, like any other language, has some unique terminology used to address certain aspects of heraldry.  Anyone attempting utilize the language will need to familiarise themselves with this terminology.    
 
 \section{The Seven Tinctures}
-The most fundamental elements of Blazon are the Tinctures.  Tinctures are the set of colours allowed in coats of arms.  English Blazon defines a set of seven tinctures and places them into to groups metals and non-metals. 
+The most fundamental elements of Blazon are the Tinctures.  Tinctures are the set of colours allowed in coats of arms.  English Blazon defines a set of seven tinctures and places them into to groups Metals and Colours. 
 
 \begin{table}[The Seven Tinctures]
 \centering
@@ -22,15 +22,15 @@ The most fundamental elements of Blazon are the Tinctures.  Tinctures are the se
 	\hline
 	\multicolumn{3}{| c |}{The Seven Tinctures} \\ \hline
 
-	Tincture & Colour & Metal \\ \hline
+	Tincture & Colour & Metal/Colour \\ \hline
 
-	Azure & Blue & Non-metal \\
+	Azure & Blue & Colour \\
 	Argent & Silver & Metal \\
-	Gules & Red & Non-metal \\
+	Gules & Red & Colour \\
 	Or & Gold & Metal \\
-	Purpure & Purple & Non-metal \\ 
-	Sable & Black & Non-metal \\
-	Vert & Green & Non-metal \\
+	Purpure & Purple & Colour \\ 
+	Sable & Black & Colour \\
+	Vert & Green & Colour \\
 	\hline
 \end{tabular}
 \caption{Table of Tinctures found in English Blazon, the corresponding colours and whether each tincture is or isn't a metal.}
@@ -48,7 +48,7 @@ With regard to the two metallic Tinctures Or, gold, and Argent, silver, having f
 
 \section{Furs}
 
-Blazon incorporates several furs commonly used in coats of arms into the language.  These behave in much the same way as tinctures but don't have the same metal or non-metal property.
+Blazon incorporates several furs commonly used in coats of arms into the language.  These behave in much the same way as tinctures but don't have the same metal or Colour property.
 
 There are several pre-defined patterns for furs that are used directly instead of actual fur on a shield.  These patters generally consist of a repeating pattern on-top of a background colour.  Each fur has a unique pattern although several are very similar, some simply being the inverse of another.
 
@@ -217,25 +217,58 @@ Another powerful aspect of Blazon is the ability to place pictures, called Charg
 
 The Geometric Charges are the most simple, they are the set of basic shapes such as a square and a circle.  The Honourable Charges are a set of predefined simple shapes some of which take after Partitions, such as \emph{"Bend"}.  The set of semi-formal charges contains everything that can be described textually, common examples are Lions and Eagles some royal Blazons have a crown as a Charge. 
 
-To define a crown in a Blazon sentence a quantifier pre-fix is used as a keyword immediately after the field the to be Charged is Tinctured. For example the Sentence \emph{"Vert a Crown Or"} Takes the implicit Field and Tinctures it \emph{Vert} before Charging the Field with a Crown Tinctured \emph{Or}, this would produce a green shield with a gold crown on it. 
+
+A Charge is declared in a Field by using a Quantifier immediately after the Field has been tinctured.  The Quantifier is a pre-fix to the charge and determines how many instances of this Charge are present on this Field.  For example the Sentence \emph{"Vert a Crown Or"} Takes the implicit Field then Tinctures it \emph{Vert} before Charging the Field with a Crown Tinctured \emph{Or}, this would produce a green shield with a gold crown on it. 
 
 The size and position of a Charge is defined so that a Charge should take up as much space as possible without obscuring any other Charge or intersecting the perimeter of the Field it is being placed onto.  
 
-Its possible to have several instances of the same charge on a Field. There are defined ways to position such groupings of charges however there is some freedom for the artist to arrange groups of Charges differently especially if the area doesn't lend itself to the traditional placement, a very wide but short Field would better suit its Charges being placed in a straight line rather than the usual grouping.
+Its possible to have several instances of the same charge on a Field. There are defined ways to position such groupings of Charges however there is some freedom for the artist to arrange groups of Charges differently especially if the area doesn't lend itself to the traditional placement, a very wide but short Field would better suit its Charges being placed in a straight line rather than the usual grouping.
 
 The prefix keyword can be a number or amount to define how many types of this Charge are present in this Field, \emph{Argent three Delfs Sable} would produce a silver shield with three black squares on it in a triangular pattern, one each in the  top corners and one centrally placed in toward the bottom. 
 
 It is even possible to have multiple groupings of different Charges on a Field.  In this case each grouping is treated like a Charge and no grouping is allowed to obscure the others.  
 
-Keywords do exist for more specific positioning of Charges such as \emph{"Beneath"} and \emph{"Above"} possible to 
+Keywords do exist for more specific positioning of Charges such as \emph{"Beneath"} and \emph{"Above"} these make it possible to position Charges relative to other Charges.
+
+Finally, it is possible to place Charges upon other Charges.  This can be done with the keywords \emph{"in"} or \emph{"upon"}. For example, \emph{"Vert a Bend Azure upon a Chief Argent"} would produce a green shield with a silver bar along the top which has a blue diagonal bar on top of it.
+
+
 
 
 \section{The Rule of Tincture}
+One of the most important and widely followed rules of Blazon is the Rule of Tincture which states that \emph{a colour may not be placed upon a colour nor a metal be placed upon a metal}\cite[p.46]{ruleofTincture}.  This rule makes certain Tincture combinations of Charges and Fields invalid with each other.  As stated above in Table 2.1, every tincture is either a Metal or a Colour in accordance with the Rule of Tincture, a Charge Tinctured with a Colour can only be placed upon a Field Tinctured with a Metal.  Likewise, A Charge Tinctured with a Metal can only be placed upon a Fields Tinctured with a Colour.  
+
+Therefore, \emph{"Azure a Cross Gules"} is an invalid Blazon sentence because both Azure and Gules are Colours and having a Colour Charged upon another Colour breaks the Rule of Tincture.  The Rule also applies to Charges placed on Charges. 
+
+\section{How to Blazon a Coat of Arms: Part Four}
+
+Charges are equally as important in Blazon as Partitioning, they allow the language a freedom to have any object placed upon them. With this extra functionality comes a slightly more complex terminology as described above with new keywords and the need to observe the Rule of Tincture.  
+
+Taking, \emph{"Per Pale Azure a Cross Argent and Or a Saltire Gules"} as an example of a Blazon sentence which uses charges it is possible to demonstrate how Charges are used in Blazon.  
+
+Starting with the implicit initial Field the Blazon sentence starts \emph{"Per Pale"} which Partitions the Field Per-wards, vertically. The left hand field is then addressed as it is the Top-Left most Field not yet Tinctured, the next word in the Sentence is a Tincture \emph{"Azure"} which indicates this Field is to be blue.  The next word in the sentence is \emph{"a"} which is a quantifier for a single charge which the Sentence states is a \emph{"Cross"} because the Charge is on a Field which has been Tinctured with a Colour, the Charge must be a Metal for the Blazon to be valid in this case the Tincture is \emph{"Argent"} which is indeed a Metal.  
+
+As the next word of interest in the the Blazon sentence is \emph{"Or"} which as a Tincture and there have been no more charges declared we address the next Field so the right half of the shield should be gold in colour. Then there is another qualifier again its \emph{"a"} indicating a single Charge which is stated as being a \emph{"Saltire"} Tinctured \emph{"Gules"} this produces a Colour Charge on a Metal Field and thus respects the Rule of Tincture.  
+
+There are no more words remaining in the Blazon sentence, all the Fields and Charges have been Tinctured and the Rule of Tincture has not been broken, therefore, \emph{"Per Pale Azure a Cross Argent and Or a Saltire Gules"} is a valid Blazon sentence which contains two Fields each with a single Charge. 
+
+
+%diagrams please
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=\textwidth]{blazon/images/perpaleazureacrossargent.eps}
+  \caption{\emph{"Per Pale Azure a Cross Argent and Or a Saltire Gules"}.\cite{linetypes}}
+  
+\end{figure}
 
 
 \section{Directions and Sides}
 
+
 \section{Overall}
+
+\section{Counter-Charging}
 
 %\begin{figure}[H]
 %\subfigure[\emph{"A more complicated."}]{\includegraphics[width=0.4\textwidth]{blazon/images/bendsinisterargentandvert.eps}}

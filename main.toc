@@ -1,27 +1,29 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
-\contentsline {section}{\numberline {1.1}Aims}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Achievable}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}Limitations}{2}{section.1.3}
-\contentsline {chapter}{\numberline {2}What is Blazon?}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}The Seven Tinctures}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Furs}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Fields}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}How to Blazon a Coat of Arms: Part One}{5}{section.2.4}
-\contentsline {section}{\numberline {2.5}Partitioning a Field}{6}{section.2.5}
-\contentsline {section}{\numberline {2.6}How to Blazon a Coat of Arms: Part Two}{8}{section.2.6}
-\contentsline {section}{\numberline {2.7}Sub-Partitioning}{10}{section.2.7}
-\contentsline {section}{\numberline {2.8}How to Blazon a Coat of Arms: Part Three}{11}{section.2.8}
-\contentsline {section}{\numberline {2.9}Line Types}{13}{section.2.9}
-\contentsline {section}{\numberline {2.10}Charges}{14}{section.2.10}
-\contentsline {section}{\numberline {2.11}The Rule of Tincture}{15}{section.2.11}
-\contentsline {section}{\numberline {2.12}Directions and Sides}{15}{section.2.12}
-\contentsline {section}{\numberline {2.13}Overall}{15}{section.2.13}
-\contentsline {chapter}{\numberline {3}Defining a Grammar for Blazon}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}What is a grammar?}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Context Free Blazon}{16}{section.3.2}
-\contentsline {section}{\numberline {3.3}Formatting Input}{16}{section.3.3}
-\contentsline {section}{\numberline {3.4}Tokenizing Strings}{16}{section.3.4}
-\contentsline {chapter}{\numberline {4}Parsing}{17}{chapter.4}
-\contentsline {chapter}{\numberline {5}Graphical Representations}{18}{chapter.5}
-\contentsline {chapter}{\numberline {6}Design}{19}{chapter.6}
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {1.1}Aims}{3}
+\contentsline {section}{\numberline {1.2}Achievable}{3}
+\contentsline {section}{\numberline {1.3}Limitations}{3}
+\contentsline {chapter}{\numberline {2}What is Blazon?}{4}
+\contentsline {section}{\numberline {2.1}The Seven Tinctures}{4}
+\contentsline {section}{\numberline {2.2}Furs}{5}
+\contentsline {section}{\numberline {2.3}Fields}{6}
+\contentsline {section}{\numberline {2.4}How to Blazon a Coat of Arms: Part One}{6}
+\contentsline {section}{\numberline {2.5}Partitioning a Field}{7}
+\contentsline {section}{\numberline {2.6}How to Blazon a Coat of Arms: Part Two}{9}
+\contentsline {section}{\numberline {2.7}Sub-Partitioning}{11}
+\contentsline {section}{\numberline {2.8}How to Blazon a Coat of Arms: Part Three}{12}
+\contentsline {section}{\numberline {2.9}Line Types}{14}
+\contentsline {section}{\numberline {2.10}Charges}{15}
+\contentsline {section}{\numberline {2.11}The Rule of Tincture}{16}
+\contentsline {section}{\numberline {2.12}How to Blazon a Coat of Arms: Part Four}{17}
+\contentsline {section}{\numberline {2.13}Directions and Sides}{18}
+\contentsline {section}{\numberline {2.14}Overall}{18}
+\contentsline {section}{\numberline {2.15}Counter-Charging}{18}
+\contentsline {chapter}{\numberline {3}Defining a Grammar for Blazon}{19}
+\contentsline {section}{\numberline {3.1}What is a grammar?}{19}
+\contentsline {section}{\numberline {3.2}Context Free Blazon}{19}
+\contentsline {section}{\numberline {3.3}Formatting Input}{19}
+\contentsline {section}{\numberline {3.4}Tokenizing Strings}{19}
+\contentsline {chapter}{\numberline {4}Parsing}{20}
+\contentsline {chapter}{\numberline {5}Graphical Representations}{21}
+\contentsline {chapter}{\numberline {6}Design}{22}
