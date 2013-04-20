@@ -222,16 +222,16 @@ A Charge is declared in a Field by using a Quantifier immediately after the Fiel
 
 The size and position of a Charge is defined so that a Charge should take up as much space as possible without obscuring any other Charge or intersecting the perimeter of the Field it is being placed onto.  
 
-Its possible to have several instances of the same charge on a Field. There are defined ways to position such groupings of Charges however there is some freedom for the artist to arrange groups of Charges differently especially if the area doesn't lend itself to the traditional placement, a very wide but short Field would better suit its Charges being placed in a straight line rather than the usual grouping.
+Its possible to have several instances of the same charge on a Field. There are common ways to position such groupings of Charges however there is freedom for the artist to arrange groups of Charges differently especially if the area doesn't lend itself to the traditional placement.  A very wide but short Field would better suit its Charges being placed in a straight line rather than the usual grouping as long as each Charge is visible. 
+
 
 The prefix keyword can be a number or amount to define how many types of this Charge are present in this Field, \emph{Argent three Delfs Sable} would produce a silver shield with three black squares on it in a triangular pattern, one each in the  top corners and one centrally placed in toward the bottom. 
 
-It is even possible to have multiple groupings of different Charges on a Field.  In this case each grouping is treated like a Charge and no grouping is allowed to obscure the others.  
+It is even possible to have multiple groupings of different Charges on a Field each Charge in the grouping is treated individually so that it is allowed to obscure any other Charge.  
 
 Keywords do exist for more specific positioning of Charges such as \emph{"Beneath"} and \emph{"Above"} these make it possible to position Charges relative to other Charges.
 
 Finally, it is possible to place Charges upon other Charges.  This can be done with the keywords \emph{"in"} or \emph{"upon"}. For example, \emph{"Vert a Bend Azure upon a Chief Argent"} would produce a green shield with a silver bar along the top which has a blue diagonal bar on top of it.
-
 
 
 
@@ -258,9 +258,13 @@ There are no more words remaining in the Blazon sentence, all the Fields and Cha
 \begin{figure}[H]
   \centering
     \includegraphics[width=\textwidth]{blazon/images/perpaleazureacrossargent.eps}
-  \caption{\emph{"Per Pale Azure a Cross Argent and Or a Saltire Gules"}.\cite{linetypes}}
+  \caption{\emph{"Per Pale Azure a Cross Argent and Or a Saltire Gules"}.}
   
 \end{figure}
+
+\section{Counter-Charging}
+
+Blazon also provides functionality for positioning Charges across Fields, this is achieved though \emph{Counter-Charging}.  If a Blazon sentence has two adjacent Fields, then a Charge can be Counter-Charged across the two fields, this would split the charge down the line of Partition between the Fields before Tincturing each half of the Charge inversely to the Field it lies in.  
 
 
 \section{Directions and Sides}
@@ -268,7 +272,11 @@ There are no more words remaining in the Blazon sentence, all the Fields and Cha
 
 \section{Overall}
 
-\section{Counter-Charging}
+
+\section{Short Hand}
+
+
+
 
 %\begin{figure}[H]
 %\subfigure[\emph{"A more complicated."}]{\includegraphics[width=0.4\textwidth]{blazon/images/bendsinisterargentandvert.eps}}
