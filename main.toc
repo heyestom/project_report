@@ -14,16 +14,18 @@
 \contentsline {section}{\numberline {2.8}How to Blazon a Coat of Arms: Part Three}{12}
 \contentsline {section}{\numberline {2.9}Line Types}{14}
 \contentsline {section}{\numberline {2.10}Charges}{15}
-\contentsline {section}{\numberline {2.11}The Rule of Tincture}{16}
-\contentsline {section}{\numberline {2.12}How to Blazon a Coat of Arms: Part Four}{17}
-\contentsline {section}{\numberline {2.13}Directions and Sides}{18}
-\contentsline {section}{\numberline {2.14}Overall}{18}
-\contentsline {section}{\numberline {2.15}Counter-Charging}{18}
-\contentsline {chapter}{\numberline {3}Defining a Grammar for Blazon}{19}
-\contentsline {section}{\numberline {3.1}What is a grammar?}{19}
-\contentsline {section}{\numberline {3.2}Context Free Blazon}{19}
-\contentsline {section}{\numberline {3.3}Formatting Input}{19}
-\contentsline {section}{\numberline {3.4}Tokenizing Strings}{19}
-\contentsline {chapter}{\numberline {4}Parsing}{20}
-\contentsline {chapter}{\numberline {5}Graphical Representations}{21}
-\contentsline {chapter}{\numberline {6}Design}{22}
+\contentsline {section}{\numberline {2.11}Attitudes}{16}
+\contentsline {section}{\numberline {2.12}The Rule of Tincture}{17}
+\contentsline {section}{\numberline {2.13}How to Blazon a Coat of Arms: Part Four}{17}
+\contentsline {section}{\numberline {2.14}Counter-Charging}{19}
+\contentsline {section}{\numberline {2.15}Directions and Sides}{20}
+\contentsline {section}{\numberline {2.16}Overall}{22}
+\contentsline {section}{\numberline {2.17}Short Hand}{22}
+\contentsline {chapter}{\numberline {3}Defining a Grammar for Blazon}{24}
+\contentsline {section}{\numberline {3.1}What is a grammar?}{24}
+\contentsline {section}{\numberline {3.2}Context Free Blazon}{24}
+\contentsline {section}{\numberline {3.3}Formatting Input}{24}
+\contentsline {section}{\numberline {3.4}Tokenizing Strings}{24}
+\contentsline {chapter}{\numberline {4}Parsing}{25}
+\contentsline {chapter}{\numberline {5}Graphical Representations}{26}
+\contentsline {chapter}{\numberline {6}Design}{27}

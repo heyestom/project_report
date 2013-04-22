@@ -218,7 +218,7 @@ Another powerful aspect of Blazon is the ability to place pictures, called Charg
 The Geometric Charges are the most simple, they are the set of basic shapes such as a square and a circle.  The Honourable Charges are a set of predefined simple shapes some of which take after Partitions, such as \emph{"Bend"}.  The set of semi-formal charges contains everything that can be described textually, common examples are Lions and Eagles some royal Blazons have a crown as a Charge. 
 
 
-A Charge is declared in a Field by using a Quantifier immediately after the Field has been tinctured.  The Quantifier is a pre-fix to the charge and determines how many instances of this Charge are present on this Field.  For example the Sentence \emph{"Vert a Crown Or"} Takes the implicit Field then Tinctures it \emph{Vert} before Charging the Field with a Crown Tinctured \emph{Or}, this would produce a green shield with a gold crown on it. 
+A Charge is declared in a Field by using a Quantifier immediately after the Field has been tinctured.  The Quantifier is a pre-fix to the charge and determines how many instances of this Charge are present on this Field.  For example the Sentence \emph{"Vert a Crown Or"} Takes the implicit Field then Tinctures it \emph{Vert} before Charging the Field with a Crown Tinctured \emph{Or}, this would produce a green shield with a gold crown on it. Semi-formal Charges can be Tinctured \emph{"Proper"} which is their natural colours.  Even if a Charge is or a fictional creature it will have a proper colouring.  Dragons are for example green when Tinctured \emph{"Proper"}. 
 
 The size and position of a Charge is defined so that a Charge should take up as much space as possible without obscuring any other Charge or intersecting the perimeter of the Field it is being placed onto.  
 
@@ -232,6 +232,20 @@ It is even possible to have multiple groupings of different Charges on a Field e
 Keywords do exist for more specific positioning of Charges such as \emph{"Beneath"} and \emph{"Above"} these make it possible to position Charges relative to other Charges.
 
 Finally, it is possible to place Charges upon other Charges.  This can be done with the keywords \emph{"in"} or \emph{"upon"}. For example, \emph{"Vert a Bend Azure upon a Chief Argent"} would produce a green shield with a silver bar along the top which has a blue diagonal bar on top of it.
+
+\section{Attitudes}
+Blazon allows semi-formal Charges to be given an \emph{Attitude} to add further description to the Charge.  This normally takes the form of an adjective applied as a suffix, one of the features inherited from French.  For example a lion can be described as rampant or as passant both of which alter the pose the lion will be depicted in.  A lion rampant is depicted as rearing up on its hind legs claws raised while a lion passant is standing horizontally with a single claw raised. 
+
+%diagrams 
+
+\begin{figure}[H]
+\subfigure[\emph{"A Lion Rampant."}]{\includegraphics[width=0.5\textwidth]{blazon/images/rampant.eps}\cite{rampant}}
+\hfill
+\subfigure[\emph{"A Lion Passant"}]{\includegraphics[width=0.5\textwidth]{blazon/images/passant.eps}\cite{passant}}
+\hfill
+\caption{\emph{"An example of applying attitudes to a charge"}.}
+
+\end{figure}
 
 
 
@@ -264,16 +278,59 @@ There are no more words remaining in the Blazon sentence, all the Fields and Cha
 
 \section{Counter-Charging}
 
-Blazon also provides functionality for positioning Charges across Fields, this is achieved though \emph{Counter-Charging}.  If a Blazon sentence has two adjacent Fields, then a Charge can be Counter-Charged across the two fields, this would split the charge down the line of Partition between the Fields before Tincturing each half of the Charge inversely to the Field it lies in.  
+Blazon also provides functionality for positioning Charges across Fields; this is achieved though \emph{Counter-Charging}.  If a Blazon sentence has two adjacent Fields, then a Charge can be Counter-Charged across the two fields, this would split the charge down the line of Partition between the Fields before Tincturing each half of the Charge inversely to the Field it lies in.  Counter-Charging is performed using the keywords \emph{Counter Charged} as a suffix operator to a charge and must have two tinctured fields defined before it. 
 
+In the example shown in figure 2.6, the Blazon sentence for the shield defines a Field Partitioned \emph{"Per Pale"} then the two resulting Fields are Tinctured \emph{"Argent"} and \emph{"Gules"} then a Charge is defined \emph{"a Bend"} which places a single diagonal bar upon the Field then the keywords \emph{Counter Charged} are supplied instead of a Tincture which extends the bar across the two Fields and colours the section on the \emph{Argent} Field in \emph{Gules} and the section on the \emph{Gules} Field in \emph{Argent}.
+
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.4\textwidth]{blazon/images/countercharged.eps}
+  \caption{\emph{"Per Pale Argent and Gules a Bend Counter Charged."\cite{countercharge}}}
+  
+\end{figure}
 
 \section{Directions and Sides}
+The Blazon language contains a set of words for describing positions and directions.  These words are obviously useful for more accurately placing Charges on a Field.  The top of the shield is refereed to as \emph{Chief} and the bottom is refereed to as \emph{Base}.  The Left hand side of the shield, from the viewers perspective is called to as \emph{Dexter} and the right hand side, again from the views perspective, is \emph{Sinister}. 
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.6\textwidth]{blazon/images/sides.eps}
+  \caption{\emph{The sides of the Field}}
+  
+\end{figure}
+
+These keywords can be used to position Charges in a Field relative to each other.  They can also be used to define direction, the most basic example of this is the Partition \emph{"Bend Sinister"} which is a diagonal line from lower left to upper right.
+Semi-formal Charges can also be given a direction like so; \emph{"A Purse Fesswise Argent Spilling Coins to Dexter Argent"} which would depicts a purse lying horizontally with coins to the left hand side, from the viewers perspective.  
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.6\textwidth]{blazon/images/purse.eps}
+  \caption{\emph{Per Bend Sinister Azure A Purse Fesswise Argent Spilling Coins to Dexter Argent Gules a Gauntlet Bendwise appaumy (an attitude meaning open palmed) Argent Bendwise sinister inverted proper.}\cite{fessways}}
+  
+\end{figure}
+
 
 
 \section{Overall}
+Blazon also encompasses a rudimentary system for layering.  Charges can be placed on top of the entire shield as long as the don't break the Rule of Tincture of Obscure another Charge.  This is achieved with the keyword \emph{Overall} which occurs at the end of a blazon sentence, when all the Fields have been Tinctured, and is then followed by a Charge. 
 
 
-\section{Short Hand}
+\section{Variations}
+Finally Blazon has several pre-defined short hands for commonly used patterns known as variations.  These patterns are all achievable through sub-partitioning but in a very verbose manor.  \emph{"Checky Argent and Gules"} produces a silver and red grid pattern which for all intents and purposes is the same as placing a large number of \emph{Delfs} Tinctured Gules onto a Field Tinctured Argent. 
+
+By default Blazon will produce the pattern in quantities of six.  The number of repetitions can be stated by adding the suffix \emph{"of"} and then providing a quantity.  
+
+\begin{figure}[H]
+\subfigure[\emph{"Checky of eight Azure and Gules"}.]{\includegraphics[width=0.5\textwidth]{blazon/images/checky.eps}}
+\hfill
+\subfigure[\emph{"Paly of sixteen Sable and Or"}]{\includegraphics[width=0.5\textwidth]{blazon/images/paly.eps}}
+\hfill
+
+\caption{\emph{Two examples of short hand being used.}}
+
+\end{figure}
+
 
 
 

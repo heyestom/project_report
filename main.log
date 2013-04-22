@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.15)  18 APR 2013 19:01
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.15)  22 APR 2013 18:13
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -315,25 +315,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--196
 
 [13] [14]
 File: blazon/images/linetypes.eps Graphic file (type eps)
- <blazon/images/linetypes.eps> [15] [16]
-File: blazon/images/perpaleazureacrossargent.eps Graphic file (type eps)
+ <blazon/images/linetypes.eps> [15]
+File: blazon/images/rampant.eps Graphic file (type eps)
+ <blazon/images/rampant.eps>
+File: blazon/images/passant.eps Graphic file (type eps)
 
-<blazon/images/perpaleazureacrossargent.eps> [17]) (./grammar/grammar.tex
-[18]
+<blazon/images/passant.eps>
+Overfull \hbox (32.63855pt too wide) in paragraph at lines 242--246
+[][]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
+
+ []
+
+[16] [17]
+File: blazon/images/perpaleazureacrossargent.eps Graphic file (type eps)
+ <blazon/images/perpaleazureacrossargent.eps> [18] [19]
+File: blazon/images/countercharged.eps Graphic file (type eps)
+
+<blazon/images/countercharged.eps>
+File: blazon/images/sides.eps Graphic file (type eps)
+ <blazon/images/sides.eps> [20]
+File: blazon/images/purse.eps Graphic file (type eps)
+
+<blazon/images/purse.eps> [21] [22]
+File: blazon/images/checky.eps Graphic file (type eps)
+ <blazon/images/checky.eps>
+File: blazon/images/paly.eps Graphic file (type eps)
+
+<blazon/images/paly.eps>
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 325--329
+[][]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--329
+
+ []
+
+) (./grammar/grammar.tex [23]
 Chapter 3.
-) (./parsing/parsing.tex [19
+) (./parsing/parsing.tex [24
 
 ]
 Chapter 4.
-) (./graphics/graphics.tex [20
+) (./graphics/graphics.tex [25
 
 ]
 Chapter 5.
-) (./design/design.tex [21
+) (./design/design.tex [26
 
 ]
 Chapter 6.
-) (./bib/bib.tex [22
+) (./bib/bib.tex [27
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
@@ -345,16 +381,53 @@ Underfull \hbox (badness 2653) in paragraph at lines 4--8
 \OT1/cmr/m/n/12 https://code.google.com/p/pyblazon/wiki/PartyPer , Febuary 4th
  []
 
-) [23
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--27
+[]\OT1/cmr/m/n/12 Author: So-da-can, The Wiki-me-dia Com-mons, De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--27
+\OT1/cmr/m/n/12 scrip-tion: A Heraldic Lion in Ram-pant At-ti-tude
+ []
+
+
+Overfull \hbox (24.62292pt too wide) in paragraph at lines 22--27
+\OT1/cmr/m/n/12 http://upload.wikimedia.org/wikipedia/commons/7/75/Lion[]Rampan
+t.svg
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+[]\OT1/cmr/m/n/12 Author: So-da-can, The Wiki-me-dia Com-mons, De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+\OT1/cmr/m/n/12 scrip-tion: A Heraldic Lion in Pas-sant At-ti-tude,
+ []
+
+
+Overfull \hbox (12.02444pt too wide) in paragraph at lines 29--34
+\OT1/cmr/m/n/12 http://upload.wikimedia.org/wikipedia/commons/f/f3/Lion[]Passan
+t.svg
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--40
+[]\OT1/cmr/m/n/12 Adapted from: Phe-lan and Vanora, March 1 1989,
+ []
+
+) [28
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 1888 strings out of 256217
- 26174 string characters out of 1917095
+ 1907 strings out of 256217
+ 26485 string characters out of 1917095
  81398 words of memory out of 1500000
- 5131 multiletter control sequences out of 10000+200000
+ 5143 multiletter control sequences out of 10000+200000
  9800 words of font info for 34 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,8n,43p,920b,287s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 35i,8n,44p,920b,287s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on main.dvi (25 pages, 39956 bytes).
+Output written on main.dvi (30 pages, 48112 bytes).
