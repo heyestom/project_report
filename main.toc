@@ -20,12 +20,12 @@
 \contentsline {section}{\numberline {2.14}Counter-Charging}{19}
 \contentsline {section}{\numberline {2.15}Directions and Sides}{20}
 \contentsline {section}{\numberline {2.16}Overall}{22}
-\contentsline {section}{\numberline {2.17}Short Hand}{22}
+\contentsline {section}{\numberline {2.17}Variations}{22}
 \contentsline {chapter}{\numberline {3}Defining a Grammar for Blazon}{24}
-\contentsline {section}{\numberline {3.1}What is a grammar?}{24}
-\contentsline {section}{\numberline {3.2}Context Free Blazon}{24}
-\contentsline {section}{\numberline {3.3}Formatting Input}{24}
-\contentsline {section}{\numberline {3.4}Tokenizing Strings}{24}
-\contentsline {chapter}{\numberline {4}Parsing}{25}
-\contentsline {chapter}{\numberline {5}Graphical Representations}{26}
-\contentsline {chapter}{\numberline {6}Design}{27}
+\contentsline {section}{\numberline {3.1}What is a Grammar?}{24}
+\contentsline {section}{\numberline {3.2}Context Free Blazon}{25}
+\contentsline {section}{\numberline {3.3}Formatting Input}{25}
+\contentsline {section}{\numberline {3.4}Tokenizing Strings}{25}
+\contentsline {chapter}{\numberline {4}Parsing}{26}
+\contentsline {chapter}{\numberline {5}Graphical Representations}{27}
+\contentsline {chapter}{\numberline {6}Design}{28}

@@ -1,6 +1,21 @@
 \chapter{Defining a Grammar for Blazon}
 
-\section{What is a grammar?}
+Now that the language of Blazon has been fully defined the task of Parsing it can begin.  Parsing a language is a fairly complicated task however there are several standard tools found throughout the field that simplify the problem by breaking it down into smaller more manageable tasks. The first goal is to express Blazon as a Grammar. 
+
+
+\section{What is a Grammar?}
+A grammar is best defined as a series of formal rules that define a formal language.  Blazon is only a semi-formal language as charges provide components that are not predefined, however they are only a sub set of the language and can be handled as edge cases but still be part of the grammar.  
+
+A sentence of a Language must conform to that Language's grammar.  To this end a grammar can be used to both produce sentences for a language but can also be used to validate that sentences conform to a Language. This is exactly what is needed for parsing. 
+
+
+
+$$ 	list \rightarrow  list + digit  $$
+$$	list \to list - digit  $$
+$$  list \to digit $$
+$$  digit \to 0|1|2|3|4|5|6|7|8|9 $$
+
+
 
 \section{Context Free Blazon}
 
