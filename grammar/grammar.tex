@@ -4,11 +4,22 @@ Now that the language of Blazon has been fully defined the task of Parsing it ca
 
 
 \section{What is a Grammar?}
-A grammar is best defined as a series of formal rules that define a formal language.  Blazon is only a semi-formal language as charges provide components that are not predefined, however they are only a sub set of the language and can be handled as edge cases but still be part of the grammar.  
+A grammar is best defined as a series of formal rules that define the syntax of a formal language.  Blazon is only a semi-formal language as charges provide components that are not predefined, however they are only a sub set of the language and can be handled as an edge case which can be included into the grammar.  
 
 A sentence of a Language must conform to that Language's grammar.  To this end a grammar can be used to both produce sentences for a language but can also be used to validate that sentences conform to a Language. This is exactly what is needed for parsing. 
 
 
+There are four parts in a grammar.  Firstly every grammar has a set of terminal or atomic symbols which are the building blocks of the language.  Secondly a grammar needs to have a set of non-terminal symbols which represent a series of terminal symbols.  Thirdly a grammar will have a series of production rules which will take a terminal symbol and turn it into a either terminal or non-terminal symbols or a combination of both. Finally a grammar must have a defined non-terminal symbol as a start symbol.
+
+
+
+
+
+There are two types of grammar, context free and context sensitive the difference between the two is in the production rules.  A context sensitive grammar can have production rules where there are both terminal tokens and non-terminal tokens on both sides where context free grammars always uniquely have non-terminals on the left hand side of every production rule. 
+
+\section{Context free Grammars}
+
+Context free grammars 
 
 $$ 	list \rightarrow  list + digit  $$
 $$	list \to list - digit  $$
@@ -18,6 +29,21 @@ $$  digit \to 0|1|2|3|4|5|6|7|8|9 $$
 
 
 \section{Context Free Blazon}
+
+
+
+\emph{Blazon as a context free grammer}
+$$ 	Field \to  Partition + Field + Field  $$
+$$	Field \to  Partition + Field + Field + Field  $$
+$$	Field \to  Partition + Field + Field + Field + Field $$
+$$  Field \to  Tinctured Field $$
+$$  Tinctured Field \to Tinctured Field + Charge $$
+$$  Charge \to Charge + Charge $$
+$$  Charge \to An Ordinary  + A Tincture $$
+$$  Charge \to A Geometric  + A Tincture $$
+$$  Charge \to A semi-formal + A Tincture $$
+
+%line types attitudes 
 
 \section{Formatting Input}
 
