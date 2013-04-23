@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.15)  23 APR 2013 14:33
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.16)  23 APR 2013 17:57
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -399,7 +399,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 325--329
 Chapter 3.
 [24
 
-]) (./parsing/parsing.tex [25]
+]
+Overfull \hbox (54.21834pt too wide) in paragraph at lines 35--52
+\OML/cmm/m/it/12 Ordinary \OMS/cmsy/m/n/12 ! \OML/cmm/m/it/12 Fess\OMS/cmsy/m/n
+/12 j\OML/cmm/m/it/12 Bar\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 Bend\OMS/cmsy/m/n/1
+2 j\OML/cmm/m/it/12 BendSinister\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 Pale\OMS/cms
+y/m/n/12 j\OML/cmm/m/it/12 Chief\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 Base\OMS/cms
+y/m/n/12 j\OML/cmm/m/it/12 Cross\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 Saltire\OMS/
+cmsy/m/n/12 j\OML/cmm/m/it/12 Chevron[] 
+ []
+
+) (./parsing/parsing.tex [25]
 Chapter 4.
 ) (./graphics/graphics.tex [26
 
@@ -464,10 +474,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--40
 Here is how much of TeX's memory you used:
  2261 strings out of 256217
  30279 string characters out of 1917095
- 84217 words of memory out of 1500000
+ 84164 words of memory out of 1500000
  5483 multiletter control sequences out of 10000+200000
  10925 words of font info for 39 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,8n,38p,920b,291s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on main.dvi (31 pages, 52060 bytes).
+Output written on main.dvi (31 pages, 52656 bytes).

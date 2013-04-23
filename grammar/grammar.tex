@@ -21,27 +21,35 @@ There are two types of grammar, context free and context sensitive the differenc
 
 Context free grammars 
 
-$$ 	list \rightarrow  list + digit  $$
-$$	list \to list - digit  $$
-$$  list \to digit $$
-$$  digit \to 0|1|2|3|4|5|6|7|8|9 $$
+$ \\	list \rightarrow  list + digit  \\
+ 	list \to list - digit  \\
+   list \to digit \\
+   digit \to 0|1|2|3|4|5|6|7|8|9 $
 
 
 
 \section{Context Free Blazon}
 
-
-
 \emph{Blazon as a context free grammer}
-$$ 	Field \to  Partition + Field + Field  $$
-$$	Field \to  Partition + Field + Field + Field  $$
-$$	Field \to  Partition + Field + Field + Field + Field $$
-$$  Field \to  Tinctured Field $$
-$$  Tinctured Field \to Tinctured Field + Charge $$
-$$  Charge \to Charge + Charge $$
-$$  Charge \to An Ordinary  + A Tincture $$
-$$  Charge \to A Geometric  + A Tincture $$
-$$  Charge \to A semi-formal + A Tincture $$
+
+$\\
+  Field \to  Partition  Of  Two + Field + Field   \\
+  Field \to  Partition  Of  Three + Field + Field + Field   \\
+  Field \to  Partition  Of  Four + Field + Field + Field + Field \\
+  Field \to  Tincture \\
+  Field \to Tincture + Charge \\
+  Charge \to Charge + Charge \\
+  Charge \to Ordinary  + Tincture \\
+  Charge \to Geometric  + Tincture \\
+  Charge \to Semi-formal + Tincture \\
+  Ordinary \to Fess | Bar | Bend | Bend Sinister | Pale | Chief | Base | Cross | Saltire | Chevron  \\
+  Geometric \to Delf | Roudle  \\
+  Semi Formal \to ???  \\
+  Tincture \to Azure | Gules | Vert | Sable | Argent | Purpure | Or \\
+  Partition  Of  Two \to Pale | Fess | Bend | Bend Sinister | Chevron \\
+  Partition  Of  Three \to Pall \\
+  Partition  Of  Four \to  Cross | Saltire  $ 
+
 
 %line types attitudes 
 
