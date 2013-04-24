@@ -1,1 +1,55 @@
 \chapter{Testing}
+
+Testing is one of the most important factors of application design allowing developments to be thoroughly checked and regulated before being fully integrated into the application.  To test the Blazon parser two main types of testing were used, Black Box testing and Regression Testing.
+
+\section{Black Box Testing}
+
+Black Box Testing involves testing an application without being able to view the source code.  Obviously this is tricky to achieve as I was both writing and testing the application.  Pseudo Black Box testing can be achieved by writing test cases before implementing any functionality. 
+
+Black Box Testing is very simple in practice.  Before even starting to write code for a new feature of the application a series of test cases describing the expected behaviour for that feature must be fully defined. 
+
+Next a series of test are defined according to the expected behaviour for example, \emph{"The application must warn the user when not enough tinctures are declared in a Blazon sentence for the number of fields"}.  
+
+Initially this seems fairly simple to test, the feature would be tested by providing the application with a Blazon sentence to parse that didn't tincture all of the fields it declared to ensure that this case would occur and that when it did the warning was presented correctly.
+
+It is also necessary to test the feature to ensure the warning is not shown inappropriately.  When the Blazon sentence is valid so all the fields are tinctured the warning should not show so a valid Blazon sentence should be another test case for this feature.
+
+Finally the warning should also not show if the sentence is invalid for another reason, so a series of invalid Blazon sentences which are incorrect but for a different reason should be provided to determine with a high degree of accuracy that the new feature does indeed work as intended. 
+
+After all the test cases have been determined, the feature is implemented.  Once completed each of the defined test cases should be run in turn.  If the feature achieves the intended behaviour as stated for a test case then the feature passes this test case.  If the feature doesn't pass the intended behaviour for a test case then the feature hasn't been implemented correctly and needs to be altered so that it does pass this test case, altering the implementation of the feature means that all the test cases need to be ran again.  This processes is repeated until the feature has been implemented in such a way that it passes all the desired test cases.
+
+
+Black Box testing lends itself very well towards an agile like  iterative development approach to an application.  Progressively adding more functionality in small quick iterations and fully testing each one will allow quick progress and make debugging a relatively painless experience.  
+
+
+\section{Regression Testing}
+Regression Testing involves checking the integrity of the rest of an applications code base once a new feature has been implemented.  
+
+Implementing a new feature tends to change the way old code worked. These changes are normally minor, an extra parameter in a function call or another method in an object to help it interface with the new feature.  It is just as important to test these little changes as it is to test the new feature.  \emph{Small changes break things}.  Regression testing involves testing parts of the application that were all ready implemented and ensuring that a minor change hasn't broken anything. 
+
+
+An example of Regression testing being useful during the development of this application was when I added a \emph{"hex"} property to my tincture objects.  Because I was writing my project in JavaScript I had to implement my own clone functions which simply created a new instance of a Tincture and set all its properties to that of the original.  Sadly I had changed the constructor of Tincture to take a hex value but  forgot to change the clone function to incorporate this change and if you call a constructor and don't provide enough parameters in JavaScript the method still gets called and the missing values as null.  The result was my cloned Tinctures having a null hex value and therefore when it came to actually drawing the colour a null pointer error was thrown but the error was not in my new code. 
+
+Fortunately I noticed that the tincture being passed to my drawing functions had a null value for element and re-tested my cloning functions which now, were not producing the desired behaviour and therefore found my mistake. 
+
+
+Like Black Box testing, Regression Testing is very useful if not necessary for an application being developed in an agile manner.  If used on a regular basis then it will defiantly help in the development of an application especially in regards to feature integration.  
+
+
+\section{Blazon Seeking Missile} 
+
+During the development of the project my flat mate \emph{Johnny Houston} took it upon himself to write a python script lovingly named \emph{"Blazon Seeking Missile"}.  The sole aim of this script was to break my project by producing very very large blazon sentences as test data.  
+
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=0.5\textwidth]{testing/images/bigmess.eps}
+  \caption{A rendering of a very complicated Blazon sentence}
+  
+\end{figure}
+
+
+This was achieved by utilising the context free grammar defined in Chapter two.  Starting with a single field the script takes an integer as a command line argument and proceeds to build a balanced tree of the arguments depth, representing a Blazon sentence, treating tinctured fields as leaves and partitions as nodes.   The script randomly selects which partitions and tinctures to use.  
+
+This tool was very useful to me in testing my web application, even if it originally had more of a malicious intent.  Essentially if my application can handle Blazon sentences containing 2\^11 partitions then it will probably be able to handle more realistic input.  It also proved the case that more complex designs are not always better by producing a lot of horrible colour schemes and designs.  
+

@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.16)  23 APR 2013 17:57
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.16)  24 APR 2013 23:36
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -419,9 +419,15 @@ Chapter 5.
 
 ]
 Chapter 6.
-) (./bib/bib.tex [28
+) (./testing/testing.tex [28
 
 ]
+Chapter 7.
+[29
+
+] [30]
+File: testing/images/bigmess.eps Graphic file (type eps)
+ <testing/images/bigmess.eps> [31]) (./bib/bib.tex [32]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []\OT1/cmr/m/n/12 Mark E. Shoul-son The py-Bla-zon wiki,
  []
@@ -468,16 +474,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--40
 []\OT1/cmr/m/n/12 Adapted from: Phe-lan and Vanora, March 1 1989,
  []
 
-) [29
+) [33
 
 ] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2261 strings out of 256217
- 30279 string characters out of 1917095
+ 2269 strings out of 256217
+ 30394 string characters out of 1917095
  84164 words of memory out of 1500000
- 5483 multiletter control sequences out of 10000+200000
+ 5485 multiletter control sequences out of 10000+200000
  10925 words of font info for 39 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,8n,38p,920b,291s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on main.dvi (31 pages, 52656 bytes).
+Output written on main.dvi (35 pages, 63468 bytes).

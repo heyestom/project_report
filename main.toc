@@ -28,5 +28,11 @@
 \contentsline {section}{\numberline {3.4}Formatting Input}{25}
 \contentsline {section}{\numberline {3.5}Tokenizing Strings}{25}
 \contentsline {chapter}{\numberline {4}Parsing}{26}
+\contentsline {section}{\numberline {4.1}Strip white space}{26}
+\contentsline {section}{\numberline {4.2}Lexical Analysis}{26}
 \contentsline {chapter}{\numberline {5}Graphical Representations}{27}
 \contentsline {chapter}{\numberline {6}Design}{28}
+\contentsline {chapter}{\numberline {7}Testing}{29}
+\contentsline {section}{\numberline {7.1}Black Box Testing}{29}
+\contentsline {section}{\numberline {7.2}Regression Testing}{30}
+\contentsline {section}{\numberline {7.3}Blazon Seeking Missile}{31}
