@@ -377,7 +377,7 @@ function lexer(strings)
               current_token.draw = draw_ordinary_bend_sinister;
             }
 
-            console.log("charge is an ordinary \""+ words[i+1]+ "\"");
+            console.log("charge is an ordinary or geometric \""+ words[i+1]+ "\"");
             is_ordinary = true;
           }
         }
@@ -451,10 +451,44 @@ function lexer(strings)
           console.log("Non-ordinary charge");
 
           // keep going through the set of strings untill:
-          // two tinctures or fus adjacent to each other 
+          // two tinctures or furs adjacent to each other 
           // a new partition
           // a new charge pre-fix
+          // current_token = new ordinary(blazon,plural,description,draw)
 
+          var blazon = " "; 
+
+          var x =1;
+
+          while(words[i+x]!="per" && i+x < words.length)
+          {
+            console.log("RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR");
+
+            for(var y = 0; y < charge_prefixis.length; y++)
+            {
+              if(words[i+x] == charge_prefixis[y])
+              {
+                break end_of_charge;
+              }
+            }
+            for (var y = 0; y < tinctures.length; y++)
+            {
+
+              if(words[i+x]==tinctures[x].tincture && words[i+x+1]==tinctures[y].tincture)
+              {
+                break end_of_charge;
+              }
+            }  
+
+            // add this word to the description
+            blazon=blazon.concat(" ");
+            blazon=blazon.concat(words.splice(i+x));
+            x++;
+            console.log("RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR");
+          }
+          end_of_charge:
+          current_token = new ordinary(blazon,"",blazon,null);
+          tokens.push(current_token);
         }
       }
     }// check for charges

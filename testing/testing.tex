@@ -1,7 +1,6 @@
 \chapter{Testing}
 
-Testing is one of the most important factors of application design allowing developments to be thoroughly checked and regulated before being fully integrated into the application.  To test the Blazon parser two main types of testing were used, Black Box testing and Regression Testing.
-
+Testing is one of the most important factors of application design allowing developments to be thoroughly checked and regulated before being fully integrated into the application.  To test the code behind the Blazon parser two main types of testing were used, Black Box testing and Regression Testing.  
 \section{Black Box Testing}
 
 Black Box Testing involves testing an application without being able to view the source code.  Obviously this is tricky to achieve as I was both writing and testing the application.  Pseudo Black Box testing can be achieved by writing test cases before implementing any functionality. 
@@ -52,4 +51,38 @@ During the development of the project my flat mate \emph{Johnny Houston} took it
 This was achieved by utilising the context free grammar defined in Chapter two.  Starting with a single field the script takes an integer as a command line argument and proceeds to build a balanced tree of the arguments depth, representing a Blazon sentence, treating tinctured fields as leaves and partitions as nodes.   The script randomly selects which partitions and tinctures to use.  
 
 This tool was very useful to me in testing my web application, even if it originally had more of a malicious intent.  Essentially if my application can handle Blazon sentences containing 2\^11 partitions then it will probably be able to handle more realistic input.  It also proved the case that more complex designs are not always better by producing a lot of horrible colour schemes and designs.  
+
+
+\section{Application Level Testing}
+It is also important to test the application as a whole as well as individual components.  Does it properly parse Blazon into a rendered Image?  How is it known that the application does indeed handle the subset of Blazon it is supposed to?   What happens if part of the language that application is not able to handle is presented? 
+
+
+\section{Testing for Completeness of the Blazon Subset}
+
+The subset of the language that the application can parse includes:
+
+\begin{enumerate}
+  \item Tinctures
+  \item Partitions
+  \item Geometric Charges
+  \item Ordinaries 
+  \item Semi Formal Charges
+\end{enumerate}
+
+
+
+The completeness of the parsing can be tested by examining the data strictures outputted to the debug console in a browser.  While the completeness of the drawing can be checked by simply looking at the result drawn on the HTML5 Canvas. 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
