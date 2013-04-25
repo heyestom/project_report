@@ -9,23 +9,65 @@ A grammar is best defined as a series of formal rules that define the syntax of 
 A sentence of a Language must conform to that Language's grammar.  To this end a grammar can be used to both produce sentences for a language but can also be used to validate that sentences conform to a Language. This is exactly what is needed for parsing. 
 
 
-There are four parts in a grammar.  Firstly every grammar has a set of terminal or atomic symbols which are the building blocks of the language.  Secondly a grammar needs to have a set of non-terminal symbols which represent a series of terminal symbols.  Thirdly a grammar will have a series of production rules which will take a terminal symbol and turn it into a either terminal or non-terminal symbols or a combination of both. Finally a grammar must have a defined non-terminal symbol as a start symbol.
-
-
+There are four parts to a grammar.  Firstly every grammar has a set of terminal or atomic symbols which are the building blocks of the language.  Secondly a grammar needs to have a set of non-terminal symbols which represent a series of terminal symbols.  Thirdly a grammar will have a series of production rules which will take a terminal symbol and turn it into a either terminal or non-terminal symbols or a combination of both. Finally a grammar must have a defined non-terminal symbol as a start symbol.
 
 
 
 There are two types of grammar, context free and context sensitive the difference between the two is in the production rules.  A context sensitive grammar can have production rules where there are both terminal tokens and non-terminal tokens on both sides where context free grammars always uniquely have non-terminals on the left hand side of every production rule. 
 
+Grammars are also useful from an iterative development perspective as they can be built up over many iterations, which is exactly what I did.  
+
 \section{Context free Grammars}
 
-Context free grammars 
+Context free grammars are very simple but powerful tools for concise syntax definition.  They form a top down hierarchy of non-terminal and terminal symbols which together can be used to generate every possible valid sentence in a language.  Non-terminal symbols are symbols that have still to be fully evaluated whilst terminal symbols are atomic and can not be evaluated further. 
 
-$ \\	list \rightarrow  list + digit  \\
- 	list \to list - digit  \\
-   list \to digit \\
-   digit \to 0|1|2|3|4|5|6|7|8|9 $
 
+
+
+
+Sentences are crafted by defining a series of production rules for the language.  In a context free grammar a production rule takes a non-terminal symbol and translates it into a different symbol or series of symbols which may be a combination of terminal or non-terminal. 
+
+
+
+A Context has a designated start non-terminal symbol which provides the highest level of abstraction.  The start symbol is evaluated by translating it using any of the production rules that take the start symbol.  The out put from the production rule now needs to be evaluated.  This is done by taking the left most, head, non-terminal symbol, using a production rule to evaluate it and then repeating until no non-terminal symbols remain. 
+Non-terminal symbols allow for a basic level of abstraction in a grammar as they may evaluate into any number of possible other symbols defined by the production rules of the language.  The start symbol will be the most abstract and the terminal symbols will be well defined instances. 
+
+\subsection{An Example Context Free Grammar}
+
+To demonstrate the power of a context free grammar I'm going to generate a few sentences for a language using a trivial grammar.  I'm going to define a Context Free Grammar which will produce sentences for the language of Meals.  
+
+\begin{figure}
+\[ Meal \to Food + Drink \]
+\[ Food \to Steak \,|\, Potato \,|\, Fish \,|\, Salad \]
+\[ Drink \to Tea \,|\, Wine \,|\, Juice\]
+
+\caption{Context Free Grammar of a Meal}
+\end{figure}
+
+The start symbol for this grammar is \emph{Meal}. There are three non-terminal symbols in the grammar, Meal, the start symbol, Food and Drink.   The \emph{|} symbol is used as an exclusive or so that multiple production rules can be compressed. 
+
+An example of producing a sentence of the Meal language:
+
+\begin{figure}[H]
+
+Starting with the start symbol:
+\[Meal\] 
+Using the production rule for Meal:
+\[ Meal \to Food + Drink \]
+Results in:
+\[Food + Drink\]
+Evaluating the left most non-terminal using the production rule for \emph{Food} which results in \emph{Steak}:
+\[ Food \to Steak \]
+Results in:
+\[Steak + Drink\]
+Finally evaluating \emph{Drink} using the production rule resulting in \emph{Wine}:
+\[ Drink \to  Wine\]
+Results in:
+\[ Steak + Wine\]
+As there are no more non-terminal symbols remaining the production is complete.
+
+\caption{Producing a Meal (easier than cooking)}
+\end{figure}
 
 
 \section{Context Free Blazon}
@@ -33,7 +75,10 @@ $ \\	list \rightarrow  list + digit  \\
 \emph{Blazon as a context free grammer}
 
 $\\
-  Field \to  Partition  Of  Two + Field + Field   \\
+  Field \to  Partition  Of  Two + Line Type + Field + Field   \\
+  Field \to  Partition  Of  Three + Line Type  + Field + Field + Field   \\
+  Field \to  Partition  Of  Four + Line Type  + Field + Field + Field + Field \\
+  Field \to  Partition  Of  Two  + Field + Field   \\
   Field \to  Partition  Of  Three + Field + Field + Field   \\
   Field \to  Partition  Of  Four + Field + Field + Field + Field \\
   Field \to  Tincture \\
@@ -48,7 +93,8 @@ $\\
   Tincture \to Azure | Gules | Vert | Sable | Argent | Purpure | Or \\
   Partition  Of  Two \to Pale | Fess | Bend | Bend Sinister | Chevron \\
   Partition  Of  Three \to Pall \\
-  Partition  Of  Four \to  Cross | Saltire  $ 
+  Partition  Of  Four \to  Cross | Saltire  \\
+  Line Type \to Embattled | Wavy | Indented | Dancetty | Nebuly | Dovetailed  $ 
 
 
 %line types attitudes 
