@@ -39,12 +39,14 @@ To demonstrate the power of a context free grammar I'm going to generate a few s
 \begin{figure}
 \[ Meal \to Food + Drink \]
 \[ Food \to Steak \,|\, Potato \,|\, Fish \,|\, Salad \]
-\[ Drink \to Tea \,|\, Wine \,|\, Juice\]
+\[ Drink \to Tea \,|\, Wine \]
 
 \caption{Context Free Grammar of a Meal}
 \end{figure}
 
-The start symbol for this grammar is \emph{Meal}. There are three non-terminal symbols in the grammar, Meal, the start symbol, Food and Drink.   The \emph{|} symbol is used as an exclusive or so that multiple production rules can be compressed. 
+The start symbol for this grammar is \emph{Meal}. There are three non-terminal symbols in the grammar, Meal, the start symbol, Food and Drink.   The $|$ symbol is used as an exclusive or so that multiple production rules can be compressed. Drink may evaluate to Either Tea or Wine. 
+
+
 
 An example of producing a sentence of the Meal language:
 
@@ -72,31 +74,53 @@ As there are no more non-terminal symbols remaining the production is complete.
 
 \section{Context Free Blazon}
 
-\emph{Blazon as a context free grammer}
+Obviously Blazon is a considerably more complex language than Meal.  As such it requires a larger grammar to fully express it.  
 
-$\\
-  Field \to  Partition  Of  Two + Line Type + Field + Field   \\
-  Field \to  Partition  Of  Three + Line Type  + Field + Field + Field   \\
-  Field \to  Partition  Of  Four + Line Type  + Field + Field + Field + Field \\
-  Field \to  Partition  Of  Two  + Field + Field   \\
-  Field \to  Partition  Of  Three + Field + Field + Field   \\
-  Field \to  Partition  Of  Four + Field + Field + Field + Field \\
-  Field \to  Tincture \\
-  Field \to Tincture + Charge \\
-  Charge \to Charge + Charge \\
-  Charge \to Ordinary  + Tincture \\
-  Charge \to Geometric  + Tincture \\
-  Charge \to Semi-formal + Tincture \\
-  Ordinary \to Fess | Bar | Bend | Bend Sinister | Pale | Chief | Base | Cross | Saltire | Chevron  \\
-  Geometric \to Delf | Roudle  \\
-  Semi Formal \to ???  \\
-  Tincture \to Azure | Gules | Vert | Sable | Argent | Purpure | Or \\
-  Partition  Of  Two \to Pale | Fess | Bend | Bend Sinister | Chevron \\
-  Partition  Of  Three \to Pall \\
-  Partition  Of  Four \to  Cross | Saltire  \\
-  Line Type \to Embattled | Wavy | Indented | Dancetty | Nebuly | Dovetailed  $ 
+The grammar's start symbol is \emph{Field} which represents the single Field that encompass the entire shield.  The grammar needs production rules that allow a Field to be either Partitioned, with or without a line type, producing a Partition as well as a number of fields or Tinctured which produces a Tincture. 
+
+Partitions are all pre-defined to produce a set number of sub-fields depending on the number produced a partition can be evaluated into any of the appropriate terminals.
+
+Tinctures can be evaluated into any of the valid Tinctures defined in Blazon which are all terminal symbols. 
+
+A Field can also evaluate into a Tincture and a Quantifier, which in turn evaluates into a Charge.  It is possible to have more than one charge per field so a production rule is defined that evaluates a Quantifier into a Charge and another Quantifier, for the next charge. This can be used repeatedly to generate any number of charges. 
 
 
+Charges can belong into one of three categories, Ordinaries, Geometrics or semi formal.  The Geometric charges are all pre-defined as are the Ordinaries.  Semi-formal charges are the exception in that they can not be pre-defined exhaustively.  However they follow the same syntactic pattern as regular charges defining the image first and ending in a tincture.
+
+
+Line types are all predefined so evaluate into terminal symbols. 
+
+
+\emph{Blazon as a context free grammar}
+\begin{figure}[H]
+
+ \[
+  Field \to  Partition  Of  Two + Line Type + Field + Field   \] \[
+  Field \to  Partition  Of  Three + Line Type  + Field + Field + Field   \] \[
+  Field \to  Partition  Of  Four + Line Type  + Field + Field + Field + Field \] \[
+  Field \to  Partition  Of  Two  + Field + Field   \] \[
+  Field \to  Partition  Of  Three + Field + Field + Field   \] \[
+  Field \to  Partition  Of  Four + Field + Field + Field + Field \] \[
+  Field \to  Tincture \] \[
+  Field \to Tincture + Quantifier \] 
+  \[Quantifier \to Charge\]
+  \[Quantifier \to Charge + Quantifier\]
+  \[ Charge \to Charge + Charge \] \[
+  Charge \to Ordinary  + Tincture \] \[
+  Charge \to Geometric  + Tincture \] \[
+  Charge \to Semi-formal + Tincture \] \[
+  Ordinary \to Fess | Bar | Bend | Bend Sinister | Pale | Chief \]
+  \[Ordinary \to Base | Cross | Saltire | Chevron  \] \[
+  Geometric \to Delf | Roudle  \] \[
+  Tincture \to Azure | Gules | Vert | Sable | Argent | Purpure | Or \] \[
+  Partition  Of  Two \to Pale | Fess | Bend | Bend Sinister | Chevron \] \[
+  Partition  Of  Three \to Pall \] \[
+  Partition  Of  Four \to  Cross | Saltire  \] \[
+  Line Type \to Embattled | Wavy | Indented | Dancetty | Nebuly | Dovetailed  \]
+  \[ Semi Formal \to ???  \] 
+
+\caption{Blazon as a context free grammer}
+\end{figure}
 %line types attitudes 
 
 \section{Formatting Input}
