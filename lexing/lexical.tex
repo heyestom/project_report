@@ -1,8 +1,27 @@
-\Chapter{Lexical Analysis} 
+\chapter{Lexical Analysis} 
 
 
-The first stage in parsing is lexical analysis.  This involves taking an input and splitting it into a series of tokens.  This is achieved by using keywords as identifiers.  
+Before parsing a Lexical analysis must be performed upon the input. The aim of Lexical Analysis is present an input in a way that makes it easier to parse.  This involves taking an input and splitting it into a series of tokens using keywords as identifiers.
 
 
-In Blazon 
+\section{What is Lexical Analysis?}
+Lexical Analysis is more concerned with classifying sections of input as instances of things than it is understanding them; as such there are generally several kind of tokens produced by a lexical analysis, determined by the context of the application.  Tokens can range from being a single letter to being a series of words, again this is context dependant.
+
+In traditional compilation all of the basic programming control statements would have their own Token; if, else, while, etc.  Tokens provide a basic abstraction level as in the sense that you can have a token representing an instance of a Tincture but the actual data about which Tincture it is an instance of is irrelevant at this stage, although it must be stored for later. 
+
+
+\section{Lexical Analysis of Blazon} 
+
+
+Lexically Analysing Blazon sentences is not 
+
+With regard to Blazon the words to be Lexically analysed are potential Blazon sentences and Tinctures, Partitions, and Charges need to be classified.
+
+
+
+  Fortunately in Blazon this is a fairly simple task.  A Partition is always prefixed \emph{"Per"} then followed by one of a pre-defined set of known partitions then an optional line type before a mandatory tincture. 
+
+
+Charges are also always prefixed but with a \emph{Quantifier} and are either followed by a tincture or a line type and then tincture.  Whenever a Tincture occurs without being part of a Charge it has to be tincturing a field. 
+ 
 

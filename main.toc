@@ -28,14 +28,17 @@
 \contentsline {section}{\numberline {3.3}Context Free Blazon}{27}
 \contentsline {section}{\numberline {3.4}Formatting Input}{29}
 \contentsline {section}{\numberline {3.5}Tokenizing Strings}{29}
-\contentsline {chapter}{\numberline {4}Parsing}{30}
-\contentsline {section}{\numberline {4.1}Strip white space}{30}
-\contentsline {section}{\numberline {4.2}Lexical Analysis}{30}
-\contentsline {chapter}{\numberline {5}Graphical Representations}{31}
-\contentsline {chapter}{\numberline {6}Design}{32}
-\contentsline {chapter}{\numberline {7}Testing}{33}
-\contentsline {section}{\numberline {7.1}Black Box Testing}{33}
-\contentsline {section}{\numberline {7.2}Regression Testing}{34}
-\contentsline {section}{\numberline {7.3}Blazon Seeking Missile}{35}
-\contentsline {section}{\numberline {7.4}Application Level Testing}{36}
-\contentsline {section}{\numberline {7.5}Testing for Completeness of the Blazon Subset}{36}
+\contentsline {chapter}{\numberline {4}Lexical Analysis}{30}
+\contentsline {section}{\numberline {4.1}What is Lexical Analysis?}{30}
+\contentsline {section}{\numberline {4.2}Lexical Analysis of Blazon}{30}
+\contentsline {chapter}{\numberline {5}Parsing}{32}
+\contentsline {section}{\numberline {5.1}Strip white space}{32}
+\contentsline {section}{\numberline {5.2}Lexical Analysis}{32}
+\contentsline {chapter}{\numberline {6}Graphical Representations}{33}
+\contentsline {chapter}{\numberline {7}Design}{34}
+\contentsline {chapter}{\numberline {8}Testing}{35}
+\contentsline {section}{\numberline {8.1}Black Box Testing}{35}
+\contentsline {section}{\numberline {8.2}Regression Testing}{36}
+\contentsline {section}{\numberline {8.3}Blazon Seeking Missile}{37}
+\contentsline {section}{\numberline {8.4}Application Level Testing}{38}
+\contentsline {section}{\numberline {8.5}Testing for Completeness of the Blazon Subset}{38}
