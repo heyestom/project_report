@@ -21,24 +21,27 @@
 \contentsline {section}{\numberline {2.15}Directions and Sides}{20}
 \contentsline {section}{\numberline {2.16}Overall}{22}
 \contentsline {section}{\numberline {2.17}Variations}{22}
-\contentsline {chapter}{\numberline {3}Defining a Grammar for Blazon}{24}
-\contentsline {section}{\numberline {3.1}What is a Grammar?}{24}
-\contentsline {section}{\numberline {3.2}Context free Grammars}{25}
-\contentsline {subsection}{\numberline {3.2.1}An Example Context Free Grammar}{25}
-\contentsline {section}{\numberline {3.3}Context Free Blazon}{27}
-\contentsline {section}{\numberline {3.4}Formatting Input}{29}
-\contentsline {section}{\numberline {3.5}Tokenizing Strings}{29}
-\contentsline {chapter}{\numberline {4}Lexical Analysis}{30}
-\contentsline {section}{\numberline {4.1}What is Lexical Analysis?}{30}
-\contentsline {section}{\numberline {4.2}Lexical Analysis of Blazon}{30}
-\contentsline {chapter}{\numberline {5}Parsing}{32}
-\contentsline {section}{\numberline {5.1}Strip white space}{32}
-\contentsline {section}{\numberline {5.2}Lexical Analysis}{32}
-\contentsline {chapter}{\numberline {6}Graphical Representations}{33}
-\contentsline {chapter}{\numberline {7}Design}{34}
-\contentsline {chapter}{\numberline {8}Testing}{35}
-\contentsline {section}{\numberline {8.1}Black Box Testing}{35}
-\contentsline {section}{\numberline {8.2}Regression Testing}{36}
-\contentsline {section}{\numberline {8.3}Blazon Seeking Missile}{37}
-\contentsline {section}{\numberline {8.4}Application Level Testing}{38}
-\contentsline {section}{\numberline {8.5}Testing for Completeness of the Blazon Subset}{38}
+\contentsline {chapter}{\numberline {3}Lexical Analysis}{24}
+\contentsline {section}{\numberline {3.1}What is Lexical Analysis?}{24}
+\contentsline {section}{\numberline {3.2}Lexical Analysis of Blazon}{24}
+\contentsline {section}{\numberline {3.3}More Involved Lexing}{26}
+\contentsline {chapter}{\numberline {4}Defining a Grammar for Blazon}{29}
+\contentsline {section}{\numberline {4.1}What is a Grammar?}{29}
+\contentsline {section}{\numberline {4.2}Context free Grammars}{30}
+\contentsline {subsection}{\numberline {4.2.1}An Example Context Free Grammar}{30}
+\contentsline {section}{\numberline {4.3}Context Free Blazon}{32}
+\contentsline {section}{\numberline {4.4}Formatting Input}{34}
+\contentsline {section}{\numberline {4.5}Tokenizing Strings}{34}
+\contentsline {chapter}{\numberline {5}Parsing}{35}
+\contentsline {section}{\numberline {5.1}Parse Trees}{35}
+\contentsline {section}{\numberline {5.2}Parsing Blazon}{35}
+\contentsline {section}{\numberline {5.3}Parsing Example}{36}
+\contentsline {section}{\numberline {5.4}Error handling}{39}
+\contentsline {chapter}{\numberline {6}Graphical Representations}{40}
+\contentsline {chapter}{\numberline {7}Design}{41}
+\contentsline {chapter}{\numberline {8}Testing}{42}
+\contentsline {section}{\numberline {8.1}Black Box Testing}{42}
+\contentsline {section}{\numberline {8.2}Regression Testing}{43}
+\contentsline {section}{\numberline {8.3}Blazon Seeking Missile}{44}
+\contentsline {section}{\numberline {8.4}Application Level Testing}{45}
+\contentsline {section}{\numberline {8.5}Testing for Completeness of the Blazon Subset}{45}

@@ -7,21 +7,120 @@ Before parsing a Lexical analysis must be performed upon the input. The aim of L
 \section{What is Lexical Analysis?}
 Lexical Analysis is more concerned with classifying sections of input as instances of things than it is understanding them; as such there are generally several kind of tokens produced by a lexical analysis, determined by the context of the application.  Tokens can range from being a single letter to being a series of words, again this is context dependant.
 
-In traditional compilation all of the basic programming control statements would have their own Token; if, else, while, etc.  Tokens provide a basic abstraction level as in the sense that you can have a token representing an instance of a Tincture but the actual data about which Tincture it is an instance of is irrelevant at this stage, although it must be stored for later. 
-
+In traditional compilation all of the basic programming control statements would have their own Token; if, else, while, etc.  Tokens provide a basic abstraction level as in the sense that you can have a token representing an instance of a Tincture but the actual data about the Tincture is irrelevant at this stage, although it must be stored for later. 
 
 \section{Lexical Analysis of Blazon} 
 
+Lexically Analysing Blazon sentences is fairly straightforward, this is due to the large number of pre-defined elements present in the language.  All the Tinctures, Partitions and Line Types are pre-defined as well as all the Geometric Charges and Honourable ordinaries.  
 
-Lexically Analysing Blazon sentences is not 
-
-With regard to Blazon the words to be Lexically analysed are potential Blazon sentences and Tinctures, Partitions, and Charges need to be classified.
-
+Blazon also heavily utilises keywords as prefixes, \emph{"Per"} always indicates the next word is a partition and any quantifier indicates a charge.  
 
 
-  Fortunately in Blazon this is a fairly simple task.  A Partition is always prefixed \emph{"Per"} then followed by one of a pre-defined set of known partitions then an optional line type before a mandatory tincture. 
+A simple Blazon sentence such as \emph{Per Bend Embattled Or and Argent} would be translated by lexical analysis into the following tokens \emph{Partition, Line Type,  Tincture, Tincture}. 
+
+Storing the data for each of the tokens is simply handled by each token being a separate instance of an object of that type. So upon encountering the word \emph{"Gules"}, an instance of a Tincture object is created representing Gules. 
+
+For the sake of simplicity Geometric Charges and Ordinaries are to be considered in the same set of pre-defined Charges,  whilst a Semi formal is to be treated as an edge case. 
+
+The only difficulty in lexing is dealing with Semi-Formal Charges.  As they can be of any length and involve a large number of descriptive attitudes and positioning.   A Semi Formal Charge declaration ends when either; the end of the sentence is reached, another quantifier and charge are declared or finally if two tinctures in a row are declared, one being for the charge and the other for the next field. 
+
+\begin{figure}[H]
+\begin{algorithmic}[1]
+
+\STATE{Lexically Analyse a given array of Strings which form a  Blazon Sentence}
 
 
-Charges are also always prefixed but with a \emph{Quantifier} and are either followed by a tincture or a line type and then tincture.  Whenever a Tincture occurs without being part of a Charge it has to be tincturing a field. 
- 
+\STATE $Words (an array of strings each of which is a word in a blazon sentence) $ 
+\STATE $Tokens[]$ \\
+\COMMENT{For every word}
+\FOR{$i=0$; $i < Words.length$; $i++$}
+
+	\IF{$Words[i] =$ \,"per"\,\&\&\, $ Words[i+1] \,is\,a\, Partition $}
+		\STATE Create a new instance of a Partition using $Words[i+1]$
+		\STATE Add this instance of a Partition to the $Tokens$ Array
+		\STATE increment $i$ by $1$ to avoid lexing it twice. 
+
+	\ELSIF{$Words[i-1] \,is\,a\,quantifier$\, \&\&\, $Words[i] \,is\, a\, Charge $}
+		\STATE Create a new instance of a Charge using $Words[i]$
+		\STATE Add this instance of a Charge to the $Tokens$ Array \\
+
+	\COMMENT {If a quantifier is not followed by a pre defined charge then it should be treated as a semi formal}	
+	\ELSIF{$Words[i-1] \,is\,a\,quantifier$}
+		\STATE Create a new instance of a semi formal $Charge$ 
+		\STATE Proceed through the array of string until the end of the charge declaration incrementing $i$ each time.  
+		\STATE Add this instance of a Charge to the $Tokens$ Array
+	\ELSIF{$Words[i] \,is\,a\,quantifier$}
+		\STATE Create a new instance of a Quantifier using $Words[i]$
+		\STATE Add this instance of a Quantifier to the $Tokens$ Array \\
+
+	\ELSIF{$Words[i] \,is\, a\, LineType $}
+		\STATE Create a new instance of a LineType using $Words[i]$
+		\STATE Add this instance of a LineType to the $Tokens$ Array
+	\ELSIF{$Words[i] \,is\, a\, Tincture $}
+		\STATE Create a new instance of a Tincture using $Words[i]$
+		\STATE Add this instance of a Tincture to the $Tokens$ Array
+ 	\ENDIF
+\ENDFOR
+
+
+
+\end{algorithmic}
+\caption{Pseudo code that produces a series of Tokens by performing Lexical analysis on a given array of Strings.}
+\end{figure}
+
+
+\section{More Involved Lexing}
+
+While the above pseudo code does provide an adequate and valid Lexical  Analysis of a Blazon sentence, it is quite naive.  
+
+It is not particularly necessary to have a operate token for each LineType and Quantifier as both only occur in relation to another kind of token so can not exist in isolation.   Quantifiers only occur before a Charge so can be encompassed into an instance of a Charge and LineTypes only occur directly after a Partition or a Charge so can also be incorporated into the representation of those objects.  It is also possible to reduce the occurrences of tinctures by wrapping Tinctures of Charges into the  Charge object. 
+
+This would leave a system with only three different kinds of token which is considerably simpler than a system with five obviously it is \emph{forty percent less complex}.  This improvement isn't very hard to implement either although it does increase introduce a potential lookahead cost, where the Lexer needs to check words further on in the sentence then that of the one currently being index. 
+
+
+
+\begin{figure}[H]
+\begin{algorithmic}[1]
+
+\STATE{Lexically Analyse a given array of Strings which form a  Blazon Sentence}
+
+
+\STATE $Words (an array of strings each of which is a word in a blazon sentence) $ 
+\STATE $Tokens[]$ \\
+\COMMENT{For every word}
+\FOR{$i=0$; $i < Words.length$; $i++$}
+
+	\IF{$Words[i] =$ \,"per"\,\&\&\, $ Words[i+1] \,is\,a\, Partition $}
+		\STATE Create a new instance of a Partition using $Words[i+1]$
+		\STATE Check for a Line Type and add to Partition instance
+		\STATE Add this instance of a Partition to the $Tokens$ Array
+
+		\STATE increment $i$ by $1$ to avoid lexing it twice. 
+
+	\ELSIF{$Words[i] \,is\,a\,quantifier$\, \&\&\, $Words[i+1] \,is\, a\, Charge $}
+		\STATE Create a new instance of a Charge using $Words[i+1]$
+		\STATE Check for a LineType and add to Charge instance
+		\STATE Find the tincture for this charge and add an Tincture object to the charge instance. 
+		\STATE Add this instance of a Charge to the $Tokens$ Array \\
+
+	\COMMENT {If a quantifier is not followed by a pre defined charge then it should be treated as a semi formal}	
+	\ELSIF{$Words[i-1] \,is\,a\,quantifier$}
+		\STATE Create a new instance of a $Charge$ 
+		\STATE Proceed through the array of string until the end of the charge declaration incrementing $i$ each time.  
+		\STATE Set the description of this charge to be the concatenation of all the words between the Quantifier and the ending Tincture.
+		\STATE Add this instance of a Charge to the $Tokens$ Array \\
+
+	\COMMENT {By looking for Tinctures last it ensures that Tinctures for Fields are never mistaken for Tinctures for Fields}
+	\ELSIF{$Words[i] \,is\, a\, Tincture $}
+		\STATE Create a new instance of a Tincture using $Words[i]$
+		\STATE Add this instance of a Tincture to the $Tokens$ Array
+ 	\ENDIF
+\ENDFOR
+
+\end{algorithmic}
+\caption{Pseudo code for a slightly more complex lexical analysis that produces a simpler output with less tokens.}
+\end{figure}
+
+Although the algorithm is slightly more complex it simplifies parsing.  By building line types and tinctures directly into the tokens it saves having to construct the more complicated data strictures later on. 
+
 
