@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.16)  29 APR 2013 17:43
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.16)  29 APR 2013 20:32
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -196,6 +196,15 @@ LaTeX Info: Redefining \addtolength on input line 76.
 
 LaTeX Warning: Label `fig:lines' multiply defined.
 
+
+LaTeX Warning: Label `fig:lines' multiply defined.
+
+
+LaTeX Warning: Label `fig:lines' multiply defined.
+
+
+LaTeX Warning: Label `fig:lines' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -250,16 +259,22 @@ File: ./logo.eps Graphic file (type eps)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
+ [4]
+(./main.lot)
+\tf@lot=\write5
+\openout5 = `main.lot'.
 
-(./intro/intro.tex [4]
+ (./intro/intro.tex [5
+
+]
 Chapter 1.
-) (./blazon/blazon.tex [5
+) (./blazon/blazon.tex [6
 
 ]
 Chapter 2.
-[6
+[7
 
-] [7]
+] [8]
 File: blazon/images/vert.eps Graphic file (type eps)
  <blazon/images/vert.eps>
 File: blazon/images/or.eps Graphic file (type eps)
@@ -268,7 +283,7 @@ File: blazon/images/azure.eps Graphic file (type eps)
 
 <blazon/images/azure.eps>
 File: blazon/images/gules.eps Graphic file (type eps)
- <blazon/images/gules.eps> [8] [9]
+ <blazon/images/gules.eps> [9] [10]
 File: blazon/images/fess.eps Graphic file (type eps)
 
 <blazon/images/fess.eps>
@@ -316,7 +331,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--120
 
  []
 
-[10] [11]
+[11] [12]
 File: blazon/images/emptyfield.eps Graphic file (type eps)
  <blazon/images/emptyfield.eps>
 File: blazon/images/bend.eps Graphic file (type eps)
@@ -332,7 +347,7 @@ File: blazon/images/bendsinisterargentandvert.eps Graphic file (type eps)
 <blazon/images/bendsinisterargentandvert.eps>
 File: blazon/images/perfessazureandor.eps Graphic file (type eps)
 
-<blazon/images/perfessazureandor.eps> [12] [13]
+<blazon/images/perfessazureandor.eps> [13] [14]
 File: blazon/images/emptyfield.eps Graphic file (type eps)
  <blazon/images/emptyfield.eps>
 File: blazon/images/bend.eps Graphic file (type eps)
@@ -365,7 +380,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--189
 
  []
 
-[14]
+[15]
 File: blazon/images/subpartition6.eps Graphic file (type eps)
  <blazon/images/subpartition6.eps>
 File: blazon/images/subpartition7.eps Graphic file (type eps)
@@ -397,9 +412,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--203
 
  []
 
-[15]
+[16]
 File: blazon/images/linetypes.eps Graphic file (type eps)
- <blazon/images/linetypes.eps> [16] [17]
+ <blazon/images/linetypes.eps> [17] [18]
 File: blazon/images/rampant.eps Graphic file (type eps)
  <blazon/images/rampant.eps>
 File: blazon/images/passant.eps Graphic file (type eps)
@@ -414,17 +429,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--254
 
  []
 
-[18] [19]
+[19] [20]
 File: blazon/images/perpaleazureacrossargent.eps Graphic file (type eps)
- <blazon/images/perpaleazureacrossargent.eps> [20] [21]
+ <blazon/images/perpaleazureacrossargent.eps> [21] [22]
 File: blazon/images/countercharged.eps Graphic file (type eps)
 
 <blazon/images/countercharged.eps>
 File: blazon/images/sides.eps Graphic file (type eps)
- <blazon/images/sides.eps> [22]
+ <blazon/images/sides.eps> [23]
 File: blazon/images/purse.eps Graphic file (type eps)
 
-<blazon/images/purse.eps> [23] [24]
+<blazon/images/purse.eps> [24] [25]
 File: blazon/images/checky.eps Graphic file (type eps)
  <blazon/images/checky.eps>
 File: blazon/images/paly.eps Graphic file (type eps)
@@ -439,9 +454,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--339
 
  []
 
-) (./lexing/lexical.tex [25]
+) (./lexing/lexical.tex [26]
 Chapter 3.
-[26
+[27
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
@@ -450,55 +465,65 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
- [27] [28] [29])
-(./grammar/grammar.tex [30]
+ [28] [29] [30])
+(./grammar/grammar.tex [31]
 Chapter 4.
-[31
+[32
 
-] [32] [33] [34] [35]) (./parsing/parsing.tex [36]
+] [33] [34] [35] [36]) (./parsing/parsing.tex [37]
 Chapter 5.
-[37
+[38
 
 ]
 File: parsing/images/Parsing5.eps Graphic file (type eps)
- <parsing/images/Parsing5.eps> [38]
+ <parsing/images/Parsing5.eps> [39]
 File: parsing/images/Parsing4.eps Graphic file (type eps)
  <parsing/images/Parsing4.eps>
 File: parsing/images/Parsing3.eps Graphic file (type eps)
 
-<parsing/images/Parsing3.eps> [39]
+<parsing/images/Parsing3.eps> [40]
 File: parsing/images/Parsing2.eps Graphic file (type eps)
  <parsing/images/Parsing2.eps>
 File: parsing/images/Parsing1.eps Graphic file (type eps)
 
-<parsing/images/Parsing1.eps> [40] [41] [42]
+<parsing/images/Parsing1.eps> [41] [42] [43]
 Overfull \vbox (71.03328pt too high) has occurred while \output is active []
 
 
-[43]) (./datastructures/data.tex
+[44]
+File: parsing/images/demo.eps Graphic file (type eps)
+ <parsing/images/demo.eps>) (./datastructures/data.tex [45]
 Chapter 6.
-File: blazon/images/linetypes.eps Graphic file (type eps)
-<blazon/images/linetypes.eps>) (./graphics/graphics.tex [44
+File: datastructures/images/tincture.eps Graphic file (type eps)
+<datastructures/images/tincture.eps>
+File: datastructures/images/partition.eps Graphic file (type eps)
+ <datastructures/images/partition.eps>
+[46
 
 ]
+File: datastructures/images/charge.eps Graphic file (type eps)
+ <datastructures/images/charge.eps>
+File: datastructures/images/linetype.eps Graphic file (type eps)
+ <datastructures/images/linetype.eps>)
+(./graphics/graphics.tex [47]
 Chapter 7.
-) (./design/design.tex [45
+) (./design/design.tex [48
 
 ]
 Chapter 8.
-) (./development/dev.tex [46
+) (./development/dev.tex [49
 
 ]
 Chapter 9.
-) (./testing/testing.tex [47
+[50
 
-]
+]) (./testing/testing.tex [51]
 Chapter 10.
-[48
+[52
 
-] [49]
+] [53]
 File: testing/images/bigmess.eps Graphic file (type eps)
- <testing/images/bigmess.eps> [50]) (./bib/bib.tex [51]
+ <testing/images/bigmess.eps> [54]) (./bib/bib.tex [55]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []\OT1/cmr/m/n/12 Mark E. Shoul-son The py-Bla-zon wiki,
  []
@@ -545,7 +570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--40
 []\OT1/cmr/m/n/12 Adapted from: Phe-lan and Vanor , March 1 1989,
  []
 
-) [52
+) [56
 
 ] (./main.aux)
 
@@ -553,12 +578,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2537 strings out of 256217
- 33773 string characters out of 1917095
+ 2554 strings out of 256217
+ 34060 string characters out of 1917095
  88813 words of memory out of 1500000
- 5716 multiletter control sequences out of 10000+200000
+ 5724 multiletter control sequences out of 10000+200000
  11117 words of font info for 39 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  35i,8n,38p,920b,653s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on main.dvi (54 pages, 105740 bytes).
+Output written on main.dvi (58 pages, 114580 bytes).
