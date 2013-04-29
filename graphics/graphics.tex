@@ -5,8 +5,85 @@ After parsing the Blazon sentence into a parse tree the application attempts to 
 Producing the Graphical Depiction of the Blazon was less important from a  functionality standpoint than correct parsing of sentences but does make for a much more interesting application for an end user.  
 
 
+\section{Adding a Graphical Description to Data Structures}
+The logical way to draw the shield was to approach the task in the same way as the textual description is handled.  Each of the data structures acting as nodes in the parse tree were expanded to implement a draw function which was called on each node in the parse tree as it was navigated. 
 
-\section{Adding a Graphical Description}
+
+This approach provided several advantages.  Firstly it utilised the parse tree and data structures which were all ready implemented, working and fully tested.  Secondly it provided a way to continue working in iterative stages like the rest of the application and thirdly if it provided the potential for very generic drawing functions that would provide a lot of reuse.
+
+
+Once again the most challenging aspect in the implementation were the semi formal charges.  The decision was made to ask the user to provide an image of the semi-formal charge they wanted to define.  This image would then be loaded directly onto the canvas in the appropriate place.  
+
+
+
+
+\section{Drawing a Shield}
+
+The first stage in implementing a graphical front end to the application was to define a way of drawing a shield.  this was achieved by utilising the Canvas element's path functions.  
+
+
+The equation for the curve of the shield was:
+
+
+\begin{figure}[H]
+$$ y = 625- x^2/500  $$
+\caption{For x =-300 through to x =+300}
+\label{math:curve}
+\end{figure}
+
+
+One of the quirks of HTML5's Canvas is that the y axis is inverted.  The top left corner of the Canvas is (0,0).  Which is why there is a negative constant in the parabola defined in \ref{math:curve}.  The rest of the shield is defined as a path from the end of the parabola in a rectangle back to the other edge of the parabola.
+
+The whole area is now clipped which is another function provided by Canvas that ensures no drawing can occur outside of the current path, the shield. 
+
+
+\section{Drawing Tinctures}
+{
+	
+One the actual body of the shield was drawn the next step was to implement the draw functions of Tinctures as they are the most basic elements of Blazon.  It would be very hard to test either Charges or Line Types without Tinctures being defined before hand.
+
+Tincture objects all needed to have hex colours defined for them which was a simple addition to the constructor.  The draw function was then defined as a generic function that took a path on the Canvas and used the given Canvas function \emph{fill} to colour the bounded area in the colour of the hex colour.  
+
+}
+
+\section{Partitioning Fields}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

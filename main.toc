@@ -37,22 +37,24 @@
 \contentsline {section}{\numberline {5.4}Error Reporting}{42}
 \contentsline {section}{\numberline {5.5}A Parsing Algorithm}{43}
 \contentsline {section}{\numberline {5.6}Tree Navigation and Results}{45}
-\contentsline {chapter}{\numberline {6}Data Structures}{46}
-\contentsline {section}{\numberline {6.1}Tinctures}{46}
-\contentsline {section}{\numberline {6.2}Partitions}{47}
-\contentsline {section}{\numberline {6.3}Charge}{47}
-\contentsline {section}{\numberline {6.4}Linetype}{47}
-\contentsline {chapter}{\numberline {7}Graphical Representations}{48}
-\contentsline {chapter}{\numberline {8}Design}{49}
-\contentsline {chapter}{\numberline {9}Development}{50}
-\contentsline {section}{\numberline {9.1}Background Research}{50}
-\contentsline {section}{\numberline {9.2}Prototypes}{50}
-\contentsline {section}{\numberline {9.3}Development of the Main Application}{51}
-\contentsline {section}{\numberline {9.4}Graphical Representation}{51}
-\contentsline {chapter}{\numberline {10}Testing}{52}
-\contentsline {section}{\numberline {10.1}Black Box Testing}{52}
-\contentsline {section}{\numberline {10.2}Regression Testing}{53}
-\contentsline {section}{\numberline {10.3}Blazon Seeking Missile}{54}
-\contentsline {section}{\numberline {10.4}Application Level Testing}{55}
-\contentsline {section}{\numberline {10.5}Testing for Completeness of the Blazon Subset}{55}
-\contentsline {section}{\numberline {10.6}Bench Marking}{55}
+\contentsline {chapter}{\numberline {6}Graphical Representations}{46}
+\contentsline {section}{\numberline {6.1}Adding a Graphical Description to Data Structures}{46}
+\contentsline {section}{\numberline {6.2}Drawing a Shield}{47}
+\contentsline {chapter}{\numberline {7}Data Structures}{48}
+\contentsline {section}{\numberline {7.1}Tinctures}{48}
+\contentsline {section}{\numberline {7.2}Partitions}{49}
+\contentsline {section}{\numberline {7.3}Charge}{49}
+\contentsline {section}{\numberline {7.4}Linetype}{49}
+\contentsline {chapter}{\numberline {8}Design}{50}
+\contentsline {chapter}{\numberline {9}Development}{51}
+\contentsline {section}{\numberline {9.1}Background Research}{51}
+\contentsline {section}{\numberline {9.2}Prototypes}{51}
+\contentsline {section}{\numberline {9.3}Development of the Main Application}{52}
+\contentsline {section}{\numberline {9.4}Graphical Representation}{52}
+\contentsline {chapter}{\numberline {10}Testing}{53}
+\contentsline {section}{\numberline {10.1}Black Box Testing}{53}
+\contentsline {section}{\numberline {10.2}Regression Testing}{54}
+\contentsline {section}{\numberline {10.3}Blazon Seeking Missile}{55}
+\contentsline {section}{\numberline {10.4}Application Level Testing}{56}
+\contentsline {section}{\numberline {10.5}Testing for Completeness of the Blazon Subset}{56}
+\contentsline {section}{\numberline {10.6}Bench Marking}{56}

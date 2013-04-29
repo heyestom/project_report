@@ -49,7 +49,7 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Context Free Grammar of a Meal}}{34}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Producing a Meal (easier than cooking)}}{35}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Blazon as a context free grammar}}{37}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Blazon as a Context Free Grammar}}{37}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces \emph {"The root of the tree is the implicit Field."}}}{40}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces \emph {"The first token is checked against the grammar then added to the tree array of the initial field."}}}{40}
@@ -59,12 +59,13 @@
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Pseudo code for Parsing Blazon.}}{44}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces \emph {Per Bend Azure and Or a Cross Vert.}}}{45}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces UML description of a Tincture.\cite {linetypes}}}{46}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces UML description of a Partition\cite {linetypes}}}{47}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces UML description of a Charge.\cite {linetypes}}}{47}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Different line types valid in Blazon.\cite {linetypes}}}{47}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces For x =-300 through to x =+300}}{47}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces UML description of a Tincture.\cite {linetypes}}}{48}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces UML description of a Partition\cite {linetypes}}}{49}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces UML description of a Charge.\cite {linetypes}}}{49}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Different line types valid in Blazon.\cite {linetypes}}}{49}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces A rendering of a very complicated Blazon sentence}}{54}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces A rendering of a very complicated Blazon sentence}}{55}
