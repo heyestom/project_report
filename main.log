@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.16)  28 APR 2013 23:29
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2012.9.16)  29 APR 2013 17:43
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -192,23 +192,26 @@ LaTeX Info: Redefining \addtolength on input line 76.
 \c@ALC@rem=\count110
 \c@ALC@depth=\count111
 \ALC@tlm=\skip55
-) (./main.aux)
+) (./main.aux
+
+LaTeX Warning: Label `fig:lines' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-
-(/usr/share/texmf/tex/latex/ragged2e/ragged2e.sty
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+ (/usr/share/texmf/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2003/03/25 v2.04 ragged2e Package (MS)
 
 (/usr/share/texmf/tex/latex/everysel/everysel.sty
@@ -230,8 +233,9 @@ LaTeX Info: Redefining \selectfont on input line 125.
 \RaggedRightParindent=\skip68
 \JustifyingParindent=\skip69
 )
-Package caption Info: float package v1.3 (or newer) detected on input line 14.
- [1
+Package caption Info: float package v1.3 (or newer) detected on input line 22.
+File: ./logo.eps Graphic file (type eps)
+ <./logo.eps> [1
 
 ]
 (./abstract/abstract.tex [1]) (./main.toc [1
@@ -240,15 +244,22 @@ Package caption Info: float package v1.3 (or newer) detected on input line 14.
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- (./intro/intro.tex [2]
+ [2] (./main.lof [3
+
+])
+\tf@lof=\write4
+\openout4 = `main.lof'.
+
+
+(./intro/intro.tex [4]
 Chapter 1.
-) (./blazon/blazon.tex [3
+) (./blazon/blazon.tex [5
 
 ]
 Chapter 2.
-[4
+[6
 
-] [5]
+] [7]
 File: blazon/images/vert.eps Graphic file (type eps)
  <blazon/images/vert.eps>
 File: blazon/images/or.eps Graphic file (type eps)
@@ -257,7 +268,7 @@ File: blazon/images/azure.eps Graphic file (type eps)
 
 <blazon/images/azure.eps>
 File: blazon/images/gules.eps Graphic file (type eps)
- <blazon/images/gules.eps> [6] [7]
+ <blazon/images/gules.eps> [8] [9]
 File: blazon/images/fess.eps Graphic file (type eps)
 
 <blazon/images/fess.eps>
@@ -268,17 +279,17 @@ File: blazon/images/bend2.eps Graphic file (type eps)
 File: blazon/images/bendsinister.eps Graphic file (type eps)
 
 <blazon/images/bendsinister.eps>
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 100--108
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 101--109
 [][]  []
  []
 
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 100--108
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 101--109
 []  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--108
+Underfull \hbox (badness 10000) in paragraph at lines 101--109
 
  []
 
@@ -305,7 +316,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--120
 
  []
 
-[8] [9]
+[10] [11]
 File: blazon/images/emptyfield.eps Graphic file (type eps)
  <blazon/images/emptyfield.eps>
 File: blazon/images/bend.eps Graphic file (type eps)
@@ -321,108 +332,116 @@ File: blazon/images/bendsinisterargentandvert.eps Graphic file (type eps)
 <blazon/images/bendsinisterargentandvert.eps>
 File: blazon/images/perfessazureandor.eps Graphic file (type eps)
 
-<blazon/images/perfessazureandor.eps> [10] [11]
+<blazon/images/perfessazureandor.eps> [12] [13]
 File: blazon/images/emptyfield.eps Graphic file (type eps)
  <blazon/images/emptyfield.eps>
 File: blazon/images/bend.eps Graphic file (type eps)
 
 <blazon/images/bend.eps>
-Underfull \hbox (badness 1527) in paragraph at lines 178--178
+Underfull \hbox (badness 1527) in paragraph at lines 180--180
 []\OT1/cmr/m/n/10 (b) \OT1/cmr/m/it/10 "The Field has been par-ti-tioned Per
+ []
+
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 178--182
+[][]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--182
+
  []
 
 File: blazon/images/subpartition4.eps Graphic file (type eps)
 <blazon/images/subpartition4.eps>
 File: blazon/images/subpartition5.eps Graphic file (type eps)
  <blazon/images/subpartition5.eps>
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 176--184
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 185--189
 [][]  []
  []
 
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 176--184
-[]  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--184
+Underfull \hbox (badness 10000) in paragraph at lines 185--189
 
  []
 
-[12]
+[14]
 File: blazon/images/subpartition6.eps Graphic file (type eps)
  <blazon/images/subpartition6.eps>
 File: blazon/images/subpartition7.eps Graphic file (type eps)
  <blazon/images/subpartition7.eps>
-File: blazon/images/subpartition8.eps Graphic file (type eps)
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 192--196
+[][]  []
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--196
+
+ []
+
+File: blazon/images/subpartition8.eps Graphic file (type eps)
 <blazon/images/subpartition8.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 192--192
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 []\OT1/cmr/m/n/10 (g) \OT1/cmr/m/it/10 "The re-main-ing Sub-Field is Sub-
  []
 
 File: blazon/images/perbendperpalesableandargentperfessorandgules.eps Graphic f
 ile (type eps)
 <blazon/images/perbendperpalesableandargentperfessorandgules.eps>
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 188--196
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 199--203
 [][]  []
  []
 
 
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 188--196
-[]  []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--196
+Underfull \hbox (badness 10000) in paragraph at lines 199--203
 
  []
 
-[13] [14]
+[15]
 File: blazon/images/linetypes.eps Graphic file (type eps)
- <blazon/images/linetypes.eps> [15]
+ <blazon/images/linetypes.eps> [16] [17]
 File: blazon/images/rampant.eps Graphic file (type eps)
  <blazon/images/rampant.eps>
 File: blazon/images/passant.eps Graphic file (type eps)
 
 <blazon/images/passant.eps>
-Overfull \hbox (27.41638pt too wide) in paragraph at lines 242--246
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 250--254
 [][]  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--246
+Underfull \hbox (badness 10000) in paragraph at lines 250--254
 
  []
 
-[16] [17]
+[18] [19]
 File: blazon/images/perpaleazureacrossargent.eps Graphic file (type eps)
- <blazon/images/perpaleazureacrossargent.eps> [18] [19]
+ <blazon/images/perpaleazureacrossargent.eps> [20] [21]
 File: blazon/images/countercharged.eps Graphic file (type eps)
 
 <blazon/images/countercharged.eps>
 File: blazon/images/sides.eps Graphic file (type eps)
- <blazon/images/sides.eps> [20]
+ <blazon/images/sides.eps> [22]
 File: blazon/images/purse.eps Graphic file (type eps)
 
-<blazon/images/purse.eps> [21] [22]
+<blazon/images/purse.eps> [23] [24]
 File: blazon/images/checky.eps Graphic file (type eps)
  <blazon/images/checky.eps>
 File: blazon/images/paly.eps Graphic file (type eps)
 
 <blazon/images/paly.eps>
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 325--329
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 335--339
 [][]  []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--329
+Underfull \hbox (badness 10000) in paragraph at lines 335--339
 
  []
 
-) (./lexing/lexical.tex [23]
+) (./lexing/lexical.tex [25]
 Chapter 3.
-[24
+[26
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 35.
@@ -431,43 +450,55 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
- [25] [26] [27])
-(./grammar/grammar.tex [28]
+ [27] [28] [29])
+(./grammar/grammar.tex [30]
 Chapter 4.
-[29
+[31
 
-] [30] [31] [32]) (./parsing/parsing.tex [33] [34]
+] [32] [33] [34] [35]) (./parsing/parsing.tex [36]
 Chapter 5.
-[35
+[37
 
 ]
 File: parsing/images/Parsing5.eps Graphic file (type eps)
- <parsing/images/Parsing5.eps>
+ <parsing/images/Parsing5.eps> [38]
 File: parsing/images/Parsing4.eps Graphic file (type eps)
- <parsing/images/Parsing4.eps> [36]
+ <parsing/images/Parsing4.eps>
 File: parsing/images/Parsing3.eps Graphic file (type eps)
 
-<parsing/images/Parsing3.eps>
+<parsing/images/Parsing3.eps> [39]
 File: parsing/images/Parsing2.eps Graphic file (type eps)
- <parsing/images/Parsing2.eps> [37]
+ <parsing/images/Parsing2.eps>
 File: parsing/images/Parsing1.eps Graphic file (type eps)
 
-<parsing/images/Parsing1.eps> [38]) (./datastructures/data.tex)
-(./graphics/graphics.tex [39]
+<parsing/images/Parsing1.eps> [40] [41] [42]
+Overfull \vbox (71.03328pt too high) has occurred while \output is active []
+
+
+[43]) (./datastructures/data.tex
 Chapter 6.
-) (./design/design.tex [40
+File: blazon/images/linetypes.eps Graphic file (type eps)
+<blazon/images/linetypes.eps>) (./graphics/graphics.tex [44
 
 ]
 Chapter 7.
-) (./testing/testing.tex [41
+) (./design/design.tex [45
 
 ]
 Chapter 8.
-[42
+) (./development/dev.tex [46
 
-] [43]
+]
+Chapter 9.
+) (./testing/testing.tex [47
+
+]
+Chapter 10.
+[48
+
+] [49]
 File: testing/images/bigmess.eps Graphic file (type eps)
- <testing/images/bigmess.eps> [44]) (./bib/bib.tex [45]
+ <testing/images/bigmess.eps> [50]) (./bib/bib.tex [51]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []\OT1/cmr/m/n/12 Mark E. Shoul-son The py-Bla-zon wiki,
  []
@@ -511,19 +542,23 @@ t.svg
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 36--40
-[]\OT1/cmr/m/n/12 Adapted from: Phe-lan and Vanora, March 1 1989,
+[]\OT1/cmr/m/n/12 Adapted from: Phe-lan and Vanor , March 1 1989,
  []
 
-) [46
+) [52
 
-] (./main.aux) ) 
+] (./main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2514 strings out of 256217
- 33549 string characters out of 1917095
+ 2537 strings out of 256217
+ 33773 string characters out of 1917095
  88813 words of memory out of 1500000
- 5702 multiletter control sequences out of 10000+200000
- 11232 words of font info for 40 fonts, out of 1200000 for 2000
+ 5716 multiletter control sequences out of 10000+200000
+ 11117 words of font info for 39 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,8n,38p,920b,489s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 35i,8n,38p,920b,653s stack positions out of 5000i,500n,6000p,200000b,15000s
 
-Output written on main.dvi (48 pages, 89052 bytes).
+Output written on main.dvi (54 pages, 105740 bytes).

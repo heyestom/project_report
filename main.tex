@@ -7,16 +7,70 @@
 \usepackage[fleqn]{amsmath}
 \usepackage{algorithmic}
 
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
-\title{Writing a grammar and Parser for Blazon}
-\author{Thomas Heyes}
 
+\let\tmp\oddsidemargin
+\let\oddsidemargin\evensidemargin
+\let\evensidemargin\tmp
+\reversemarginpar
+\setlength{\mathindent}{0pt}
+
+
+%\title{Writing a grammar and Parser for Blazon}
+%\author{Student: Thomas Heyes \and  Supervisor: Dr Robert Stevens \and  Second Marker: Dr Sandra Sampaio}
 \begin{document}
-\maketitle
+%\maketitle
+
+
+\begin{titlepage}
+\begin{center}
+
+\textsc{\LARGE University of Manchester School of Computer Science}\\[0.5cm]
+
+\textsc{\Large Bsc (Hons) Computer Science }\\[1cm]
+
+
+\includegraphics[width=0.4\textwidth]{./logo.eps}~\\[0.5em]
+
+\textsc{\Large Final year project}\\[0.2em]
+
+
+% Title
+\HRule \\[0.4cm]
+{ \huge \bfseries Writing a grammar \& Parser for Blazon }\\[0.1em]
+
+\HRule \\[1.5em]
+
+% Author and supervisor
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+Thomas Heyes
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Dr.~Robert Stevens 
+\end{flushright}
+\end{minipage}
+
+\vfill
+
+% Bottom of the page
+
+{\large \today}
+
+\end{center}
+\end{titlepage}
+
 
 \input{abstract/abstract.tex}
 
 \tableofcontents
+\listoffigures
+
 \input{intro/intro.tex}
 \input{blazon/blazon.tex}
 \input{lexing/lexical.tex}
@@ -25,7 +79,7 @@
 \input{datastructures/data.tex}
 \input{graphics/graphics.tex}
 \input{design/design.tex}
+\input{development/dev.tex}
 \input{testing/testing.tex}
 \input{bib/bib.tex}
-
 \end{document}

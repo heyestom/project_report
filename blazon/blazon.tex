@@ -77,6 +77,7 @@ In each example we are implicitly provided with a single Field which encompasses
 \subfigure[\emph{"Gules"}]{\includegraphics[width=0.4\textwidth]{blazon/images/gules.eps}}
 \hfill
 \caption{Basic Blazon examples.}
+\label{Basic examples}
 \end{figure}
 
 Although the examples in Figure 2.1 are very basic each is a complete instance of a valid Blazoning of a shield.
@@ -108,7 +109,6 @@ The Blazon sentence is only complete when all the Fields have been Tinctured.  I
 \end{figure}
 
 \begin{figure}[H]
-\ContinuedFloat
 \subfigure[\emph{"Cheveron"}]{\includegraphics[width=0.5\textwidth]{blazon/images/cheveron.eps}}
 \hfill
 \subfigure[\emph{"Pall"}]{\includegraphics[width=0.5\textwidth]{blazon/images/pall.eps}}
@@ -119,6 +119,8 @@ The Blazon sentence is only complete when all the Fields have been Tinctured.  I
 \hfill
 
 \caption{\emph{"Valid Partitions of a Field"}}
+\label{Partitions}
+
 \end{figure}
 
 
@@ -169,7 +171,7 @@ The new Fields created by the Partition fully evaluated before any other Fields 
 
 With Sub-Partitioning the set of valid Blazon sentences ceases to be finite, it is possible to repeatedly Partition a Field then Sub-Partition the new Sub-Fields and endlessly repeating this process.  Very complex patterns can now be created with precisely defined Sub-Fields.
 
-\emph{"Per Bend Per Pale Sable and Argent Per Fess Or and Gules"} is an example a Blazon sentence which makes use of Sub-Partitioning.  As before the the sentence is addressed from left to right and there is an implicit Field over the entire body of the shield.  The sentence is valid if there are as many Fields defined as there are instances of Tinctures in the sentence. 
+\emph{"Per Bend Per Pale Sable and Argent Per Fess Or and Gules"} is an example a Blazon sentence which makes use of Sub-Partitioning.  As before  the sentence is addressed from left to right and there is an implicit Field over the entire body of the shield.  The sentence is valid if there are as many Fields defined as there are instances of Tinctures in the sentence. 
 
 
 \begin{figure}[H]
@@ -177,6 +179,9 @@ With Sub-Partitioning the set of valid Blazon sentences ceases to be finite, it 
 \hfill
 \subfigure[\emph{"The Field has been partitioned Per Bend"}]{\includegraphics[width=0.5\textwidth]{blazon/images/bend.eps}}
 \hfill
+\end{figure}
+
+\begin{figure}[H]
 \subfigure[\emph{"The Topmost Field has then been Sub partitioned Pale"}]{\includegraphics[width=0.5\textwidth]{blazon/images/subpartition4.eps}}
 \hfill
 \subfigure[\emph{"The Top Left most Sub-Field is Tinctured Sable"}]{\includegraphics[width=0.5\textwidth]{blazon/images/subpartition5.eps}}
@@ -184,11 +189,13 @@ With Sub-Partitioning the set of valid Blazon sentences ceases to be finite, it 
 \end{figure}
 
 \begin{figure}[H]
-\ContinuedFloat
 \subfigure[\emph{"The remaining Field is Sub-Partitioned Fess"}]{\includegraphics[width=0.5\textwidth]{blazon/images/subpartition6.eps}}
 \hfill
 \subfigure[\emph{"The Top Left Most Sub-Field is Tinctured Or"}]{\includegraphics[width=0.5\textwidth]{blazon/images/subpartition7.eps}}
 \hfill
+\end{figure}
+
+\begin{figure}[H]
 \subfigure[\emph{"The remaining Sub-Field is Sub-Partitioned Fess"}]{\includegraphics[width=0.5\textwidth]{blazon/images/subpartition8.eps}}
 \hfill
 \subfigure[\emph{"The final Field is Tinctured Gules"}]{\includegraphics[width=0.5\textwidth]{blazon/images/perbendperpalesableandargentperfessorandgules.eps}}
@@ -200,7 +207,7 @@ With Sub-Partitioning the set of valid Blazon sentences ceases to be finite, it 
 
 Blazon allows for Partitions to be patterned with different Line Types.  The line division through a Field when partitioning is implicitly a straight line however there are a set of pre-defined Line Types which can be used instead.  
 
-A Lint Type is declared in Blazon simply by stating the name of the Line Type desired immediately after a partition. For example \emph{Per Fess Embattled Argent and Sable} is the Blazon sentence for a Silver and Black shield divided horizontally with an \emph{"Embattled"} line, see figure 2.4.  
+A Lint Type is declared in Blazon simply by stating the name of the Line Type desired immediately after a partition. For example \emph{Per Fess Embattled Argent and Sable} is the Blazon sentence for a Silver and Black shield divided horizontally with an \emph{"Embattled"} line, see Figure\ref{fig:lines}.  
 
 Line Types can be applied to Sub-Partitions and its possible to have multiple Line Types in a single Blazon sentence. 
 
@@ -208,6 +215,7 @@ Line Types can be applied to Sub-Partitions and its possible to have multiple Li
   \centering
     \includegraphics[width=\textwidth]{blazon/images/linetypes.eps}
   \caption{Different line types valid in Blazon.\cite{linetypes}}
+  \label{fig:lines}
   
 \end{figure}
 
@@ -239,9 +247,9 @@ Blazon allows semi-formal Charges to be given an \emph{Attitude} to add further 
 %diagrams 
 
 \begin{figure}[H]
-\subfigure[\emph{"A Lion Rampant."}]{\includegraphics[width=0.5\textwidth]{blazon/images/rampant.eps}\cite{rampant}}
+\subfigure[\emph{"A Lion Rampant.\cite{rampant}"}]{\includegraphics[width=0.5\textwidth]{blazon/images/rampant.eps}}
 \hfill
-\subfigure[\emph{"A Lion Passant"}]{\includegraphics[width=0.5\textwidth]{blazon/images/passant.eps}\cite{passant}}
+\subfigure[\emph{"A Lion Passant"\cite{passant}}]{\includegraphics[width=0.5\textwidth]{blazon/images/passant.eps}}
 \hfill
 \caption{\emph{"An example of applying attitudes to a charge"}.}
 
@@ -262,7 +270,7 @@ Taking, \emph{"Per Pale Azure a Cross Argent and Or a Saltire Gules"} as an exam
 
 Starting with the implicit initial Field the Blazon sentence starts \emph{"Per Pale"} which Partitions the Field Per-wards, vertically. The left hand field is then addressed as it is the Top-Left most Field not yet Tinctured, the next word in the Sentence is a Tincture \emph{"Azure"} which indicates this Field is to be blue.  The next word in the sentence is \emph{"a"} which is a quantifier for a single charge which the Sentence states is a \emph{"Cross"} because the Charge is on a Field which has been Tinctured with a Colour, the Charge must be a Metal for the Blazon to be valid in this case the Tincture is \emph{"Argent"} which is indeed a Metal.  
 
-As the next word of interest in the the Blazon sentence is \emph{"Or"} which as a Tincture and there have been no more charges declared we address the next Field so the right half of the shield should be gold in colour. Then there is another qualifier again its \emph{"a"} indicating a single Charge which is stated as being a \emph{"Saltire"} Tinctured \emph{"Gules"} this produces a Colour Charge on a Metal Field and thus respects the Rule of Tincture.  
+As the next word of interest in the Blazon sentence is \emph{"Or"} which as a Tincture and there have been no more charges declared we address the next Field so the right half of the shield should be gold in colour. Then there is another qualifier again its \emph{"a"} indicating a single Charge which is stated as being a \emph{"Saltire"} Tinctured \emph{"Gules"} this produces a Colour Charge on a Metal Field and thus respects the Rule of Tincture.  
 
 There are no more words remaining in the Blazon sentence, all the Fields and Charges have been Tinctured and the Rule of Tincture has not been broken, therefore, \emph{"Per Pale Azure a Cross Argent and Or a Saltire Gules"} is a valid Blazon sentence which contains two Fields each with a single Charge. 
 
@@ -280,13 +288,15 @@ There are no more words remaining in the Blazon sentence, all the Fields and Cha
 
 Blazon also provides functionality for positioning Charges across Fields; this is achieved though \emph{Counter-Charging}.  If a Blazon sentence has two adjacent Fields, then a Charge can be Counter-Charged across the two fields, this would split the charge down the line of Partition between the Fields before Tincturing each half of the Charge inversely to the Field it lies in.  Counter-Charging is performed using the keywords \emph{Counter Charged} as a suffix operator to a charge and must have two tinctured fields defined before it. 
 
-In the example shown in figure 2.6, the Blazon sentence for the shield defines a Field Partitioned \emph{"Per Pale"} then the two resulting Fields are Tinctured \emph{"Argent"} and \emph{"Gules"} then a Charge is defined \emph{"a Bend"} which places a single diagonal bar upon the Field then the keywords \emph{Counter Charged} are supplied instead of a Tincture which extends the bar across the two Fields and colours the section on the \emph{Argent} Field in \emph{Gules} and the section on the \emph{Gules} Field in \emph{Argent}.
+In the example shown in figure \ref{fig:counter}
+, the Blazon sentence for the shield defines a Field Partitioned \emph{"Per Pale"} then the two resulting Fields are Tinctured \emph{"Argent"} and \emph{"Gules"} then a Charge is defined \emph{"a Bend"} which places a single diagonal bar upon the Field then the keywords \emph{Counter Charged} are supplied instead of a Tincture which extends the bar across the two Fields and colours the section on the \emph{Argent} Field in \emph{Gules} and the section on the \emph{Gules} Field in \emph{Argent}.
 
 
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.4\textwidth]{blazon/images/countercharged.eps}
   \caption{\emph{"Per Pale Argent and Gules a Bend Counter Charged."\cite{countercharge}}}
+  \label{fig:counter}
   
 \end{figure}
 

@@ -34,9 +34,9 @@ Non-terminal symbols allow for a basic level of abstraction in a grammar as they
 
 \subsection{An Example Context Free Grammar}
 
-To demonstrate the power of a context free grammar I'm going to generate a few sentences for a language using a trivial grammar.  I'm going to define a Context Free Grammar which will produce sentences for the language of Meals.  
+To demonstrate the power of a context free grammar an exaple will be  to generate a sentence of a language using a trivial grammar.  The example will  define a Context Free Grammar which will produce sentences for the language of Meals.  
 
-\begin{figure}
+\begin{figure}[H]
 \[ Meal \to Food + Drink \]
 \[ Food \to Steak \,|\, Potato \,|\, Fish \,|\, Salad \]
 \[ Drink \to Tea \,|\, Wine \]
@@ -94,6 +94,7 @@ Line types are all predefined so evaluate into terminal symbols.
 \emph{Blazon as a context free grammar}
 \begin{figure}[H]
 
+
  \[
   Field \to  Partition  Of  Two + Line Type + Field + Field   \] \[
   Field \to  Partition  Of  Three + Line Type  + Field + Field + Field   \] \[
@@ -105,8 +106,7 @@ Line types are all predefined so evaluate into terminal symbols.
   Field \to Tincture + Quantifier \] 
   \[Quantifier \to Charge\]
   \[Quantifier \to Charge + Quantifier\]
-  \[ Charge \to Charge + Charge \] \[
-  Charge \to Ordinary  + Tincture \] \[
+  \[Charge \to Ordinary  + Tincture \] \[
   Charge \to Geometric  + Tincture \] \[
   Charge \to Semi-formal + Tincture \] \[
   Ordinary \to Fess | Bar | Bend | Bend Sinister | Pale | Chief \]
@@ -119,10 +119,7 @@ Line types are all predefined so evaluate into terminal symbols.
   Line Type \to Embattled | Wavy | Indented | Dancetty | Nebuly | Dovetailed  \]
   \[ Semi Formal \to ???  \] 
 
-\caption{Blazon as a context free grammer}
+\caption{Blazon as a context free grammar}
 \end{figure}
 %line types attitudes 
 
-\section{Formatting Input}
-
-\section{Tokenizing Strings} 
