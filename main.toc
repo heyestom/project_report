@@ -28,7 +28,7 @@
 \contentsline {section}{\numberline {3.3}More Involved Lexing}{32}
 \contentsline {chapter}{\numberline {4}Defining a Grammar for Blazon}{35}
 \contentsline {section}{\numberline {4.1}What is a Grammar?}{35}
-\contentsline {section}{\numberline {4.2}Context free Grammars}{36}
+\contentsline {section}{\numberline {4.2}Context Free Grammars}{36}
 \contentsline {subsection}{\numberline {4.2.1}An Example Context Free Grammar}{36}
 \contentsline {section}{\numberline {4.3}Context Free Blazon}{38}
 \contentsline {chapter}{\numberline {5}Parsing}{41}

@@ -1,40 +1,39 @@
 \chapter{Defining a Grammar for Blazon}
 
-Now that the language of Blazon has been fully defined the task of Parsing it can begin.  Parsing a language is a fairly complicated task however there are several standard tools found throughout the field that simplify the problem by breaking it down into smaller more manageable tasks. The first goal is to express Blazon as a Grammar. 
+Now that the language of Blazon has been fully defined, the task of parsing will be discussed.  Parsing a language is a fairly complicated task; however, there are several standard tools found throughout the field that simplifies the problem by breaking it down into smaller, more manageable tasks. The first goal is to express Blazon as a Grammar. 
 
 
 \section{What is a Grammar?}
 A grammar is best defined as a series of formal rules that define the syntax of a formal language.  Blazon is only a semi-formal language as charges provide components that are not predefined, however they are only a sub set of the language and can be handled as an edge case which can be included into the grammar.  
 
-A sentence of a Language must conform to that Language's grammar.  To this end a grammar can be used to both produce sentences for a language but can also be used to validate that sentences conform to a Language. This is exactly what is needed for parsing. 
+A sentence of a Language must first conform to that Language's grammar.  To this end, a grammar can be used to both produce sentences for a language and also to validate that sentences conform to a Language. This is exactly what is needed for parsing. 
 
 
-There are four parts to a grammar.  Firstly every grammar has a set of terminal or atomic symbols which are the building blocks of the language.  Secondly a grammar needs to have a set of non-terminal symbols which represent a series of terminal symbols.  Thirdly a grammar will have a series of production rules which will take a terminal symbol and turn it into a either terminal or non-terminal symbols or a combination of both. Finally a grammar must have a defined non-terminal symbol as a start symbol.
-
-
-
-There are two types of grammar, context free and context sensitive the difference between the two is in the production rules.  A context sensitive grammar can have production rules where there are both terminal tokens and non-terminal tokens on both sides where context free grammars always uniquely have non-terminals on the left hand side of every production rule. 
-
-Grammars are also useful from an iterative development perspective as they can be built up over many iterations, which is exactly what I did.  
-
-\section{Context free Grammars}
-
-Context free grammars are very simple but powerful tools for concise syntax definition.  They form a top down hierarchy of non-terminal and terminal symbols which together can be used to generate every possible valid sentence in a language.  Non-terminal symbols are symbols that have still to be fully evaluated whilst terminal symbols are atomic and can not be evaluated further. 
+There are four parts to a grammar.  Firstly, every grammar has a set of terminal or atomic symbols which are the building blocks of the language.  Secondly, a grammar needs to have a set of non-terminal symbols which represent a series of terminal symbols.  Thirdly, a grammar will have a series of production rules which will take a terminal symbol and turn it into a terminal or non-terminal symbol. Sometimes, a combination of both terminal symbols will be seen. Finally a grammar must have a defined non-terminal symbol as a start symbol.
 
 
 
+There are two types of grammar, context free and context sensitive the difference between the two is in the production rules.  A context sensitive grammar can have production rules where there are both terminal tokens and non-terminal tokens on both sides. Context free grammars always uniquely have non-terminals on the left hand side of every production rule. 
+
+Grammars are also useful from an iterative development perspective as they can be built up over many iterations, which is exactly what was done.  
+
+\section{Context Free Grammars}
+
+Context free grammars are very simple but powerful tools for concise syntax definitions.  They form a top down hierarchy of non-terminal and terminal symbols which together can be used to generate every possible valid sentence in a language.  Non-terminal symbols are symbols that have yet to be fully evaluated whilst terminal symbols are atomic and cannot be evaluated further. 
 
 
-Sentences are crafted by defining a series of production rules for the language.  In a context free grammar a production rule takes a non-terminal symbol and translates it into a different symbol or series of symbols which may be a combination of terminal or non-terminal. 
+Sentences are crafted by defining a series of production rules for the language.  In a context free grammar, a production rule takes a non-terminal symbol and translates it into a different symbol or series of symbols which may be a combination of terminal or non-terminal. 
 
 
 
-A Context has a designated start non-terminal symbol which provides the highest level of abstraction.  The start symbol is evaluated by translating it using any of the production rules that take the start symbol.  The out put from the production rule now needs to be evaluated.  This is done by taking the left most, head, non-terminal symbol, using a production rule to evaluate it and then repeating until no non-terminal symbols remain. 
+A context free grammar has a designated start non-terminal symbol which provides the highest level of abstraction.  The start symbol is evaluated by translating it by using any of the production rules that take the start symbol.  The output from the production rule then needs to be evaluated.
+This is done by taking the left most, non-terminal symbol and using a production rule to evaluate it.  This processes is then repeated until only terminal symbols remain. 
+
 Non-terminal symbols allow for a basic level of abstraction in a grammar as they may evaluate into any number of possible other symbols defined by the production rules of the language.  The start symbol will be the most abstract and the terminal symbols will be well defined instances. 
 
 \subsection{An Example Context Free Grammar}
 
-To demonstrate the power of a context free grammar an exaple will be  to generate a sentence of a language using a trivial grammar.  The example will  define a Context Free Grammar which will produce sentences for the language of Meals.  
+To demonstrate the power of a context free grammar, an example will be  to generate a sentence of a language using a trivial grammar.  The example will  define a Context Free Grammar which will produce sentences for the language of Meals.  
 
 \begin{figure}[H]
 \[ Meal \to Food + Drink \]
@@ -44,7 +43,7 @@ To demonstrate the power of a context free grammar an exaple will be  to generat
 \caption{Context Free Grammar of a Meal}
 \end{figure}
 
-The start symbol for this grammar is \emph{Meal}. There are three non-terminal symbols in the grammar, Meal, the start symbol, Food and Drink.   The $|$ symbol is used as an exclusive or so that multiple production rules can be compressed. Drink may evaluate to Either Tea or Wine. 
+The start symbol for this grammar is \emph{Meal}. There are three non-terminal symbols in the grammar: Meal, the start symbol, Food and Drink. The $|$ symbol is used as an exclusive or (XOR) so that multiple production rules can be compressed. Drink may evaluate to Either Tea or Wine. 
 
 
 
@@ -74,18 +73,22 @@ As there are no more non-terminal symbols remaining the production is complete.
 
 \section{Context Free Blazon}
 
-Obviously Blazon is a considerably more complex language than Meal.  As such it requires a larger grammar to fully express it.  
+Blazon is a considerably more complex language than Meal.  It requires a larger grammar to fully express it.  
 
-The grammar's start symbol is \emph{Field} which represents the single Field that encompass the entire shield.  The grammar needs production rules that allow a Field to be either Partitioned, with or without a line type, producing a Partition as well as a number of fields or Tinctured which produces a Tincture. 
-
-Partitions are all pre-defined to produce a set number of sub-fields depending on the number produced a partition can be evaluated into any of the appropriate terminals.
-
-Tinctures can be evaluated into any of the valid Tinctures defined in Blazon which are all terminal symbols. 
-
-A Field can also evaluate into a Tincture and a Quantifier, which in turn evaluates into a Charge.  It is possible to have more than one charge per field so a production rule is defined that evaluates a Quantifier into a Charge and another Quantifier, for the next charge. This can be used repeatedly to generate any number of charges. 
+The grammar's start symbol is \emph{Field} which represents the single Field that encompass the entire shield.  The grammar needs production rules that allow a Field to be either partitioned, with or without a line type, producing a partition as well as a number of fields or Tinctured which produces a Tincture. 
 
 
-Charges can belong into one of three categories, Ordinaries, Geometrics or semi formal.  The Geometric charges are all pre-defined as are the Ordinaries.  Semi-formal charges are the exception in that they can not be pre-defined exhaustively.  However they follow the same syntactic pattern as regular charges defining the image first and ending in a tincture.
+
+Partitions are all pre-defined to produce a set number of sub-fields.  Depending on the number produced a partition can be evaluated into any of the appropriate terminals.
+
+Tinctures can be evaluated into any of the valid tinctures defined in Blazon, which are all terminal symbols such as \emph{Azure}. 
+
+
+
+A Field can also be evaluated into a tincture and a quantifier, which in turn evaluates into a charge.  It is possible to have more than one charge per field so a production rule must be defined that evaluates a quantifier into a charge and another quantifier, for the next charge. This can be used repeatedly to generate any number of charges. 
+
+
+Charges can belong into one of three categories, ordinaries, geometrics or semi formal.  The geometric charges are all pre-defined as are the ordinaries.  Semi-formal charges are the exception in that they can not be pre-defined exhaustively.  However they follow the same syntactic pattern as regular charges defining the image first and ending in a tincture.
 
 
 Line types are all predefined so evaluate into terminal symbols. 
