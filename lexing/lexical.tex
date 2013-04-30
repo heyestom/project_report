@@ -1,28 +1,28 @@
 \chapter{Lexical Analysis} 
 
 
-Before parsing a Lexical analysis must be performed upon the input. The aim of Lexical Analysis is present an input in a way that makes it easier to parse.  This involves taking an input and splitting it into a series of tokens using keywords as identifiers.
+Before parsing, a Lexical analysis must be performed upon the input Blazon sentence. The aim of a Lexical Analysis is to tokenise an input in such a way that makes it easier to parse.  This involves taking an input and splitting it into a series of tokens by using keywords as identifiers.
 
 
 \section{What is Lexical Analysis?}
-Lexical Analysis is more concerned with classifying sections of input as instances of things than it is understanding them; as such there are generally several kind of tokens produced by a lexical analysis, determined by the context of the application.  Tokens can range from being a single letter to being a series of words, again this is context dependant.
+Lexical Analysis is more concerned with classifying sections of input as instances of things than understanding them.  There are generally several kinds of token produced by a lexical analysis, each determined by the context of the application.  Tokens can range from being a single letter to being a series of words.
 
-In traditional compilation all of the basic programming control statements would have their own Token; if, else, while, etc.  Tokens provide a basic abstraction level as in the sense that you can have a token representing an instance of a Tincture but the actual data about the Tincture is irrelevant at this stage, although it must be stored for later. 
+In traditional compilation, all of the basic programming control statements would have their own token; if, else, while, etc.  Tokens provide a basic abstraction level in the sense that you can have a token representing an instance of a tincture. The actual data about the tincture is irrelevant at this stage but must be stored for later. 
 
 \section{Lexical Analysis of Blazon} 
 
-Lexically Analysing Blazon sentences is fairly straightforward, this is due to the large number of pre-defined elements present in the language.  All the Tinctures, Partitions and Line Types are pre-defined as well as all the Geometric Charges and Honourable ordinaries.  
+Lexically Analysing Blazon sentences is fairly straightforward, due to the large number of pre-defined elements that are present in the language.  All of the tinctures, partitions and line types are pre-defined as well as all of the geometric charges and honourable ordinaries.  
 
-Blazon also heavily utilises keywords as prefixes, \emph{"Per"} always indicates the next word is a partition and any quantifier indicates a charge.  
+Blazon also heavily utilises keywords as prefixes. \emph{"Per"} always indicates the next word is a partition and any quantifier indicates a charge.  
 
 
-A simple Blazon sentence such as \emph{Per Bend Embattled Or and Argent} would be translated by lexical analysis into the following tokens \emph{Partition, Line Type,  Tincture, Tincture}. 
+A simple Blazon sentence such as \emph{Per Bend Embattled Or and Argent} would be translated by lexical analysis into the following tokens: \emph{Partition, Line Type,  Tincture, Tincture}. 
 
-Storing the data for each of the tokens is simply handled by each token being a separate instance of an object of that type. So upon encountering the word \emph{"Gules"}, an instance of a Tincture object is created representing Gules. 
+Storing data for each of the tokens is handled by creating an instance of an object for of the appropriate type. Upon encountering the word \emph{"Gules"}, an instance of a tincture object is created representing Gules. 
 
-For the sake of simplicity Geometric Charges and Ordinaries are to be considered in the same set of pre-defined Charges,  whilst a Semi formal is to be treated as an edge case. 
+For the sake of simplicity, geometric charges and ordinaries are considered as being in the same set of pre-defined charges,  while a semi formal is to be treated as an edge case. 
 
-The only difficulty in lexing is dealing with Semi-Formal Charges.  As they can be of any length and involve a large number of descriptive attitudes and positioning.   A Semi Formal Charge declaration ends when either; the end of the sentence is reached, another quantifier and charge are declared or finally if two tinctures in a row are declared, one being for the charge and the other for the next field. 
+The only difficulty in lexing is dealing with semi formal Charges.  These semi formal charges can be of any length and involve a large number of descriptive attitudes and positions.   A semi formal charge declaration ends when either: the end of the sentence is reached, another quantifier and charge are declared or if two tinctures in a row are declared (one being for the charge and the other for the next field). 
 
 \begin{figure}[H]
 \begin{algorithmic}[1]
@@ -71,11 +71,21 @@ The only difficulty in lexing is dealing with Semi-Formal Charges.  As they can 
 
 \section{More Involved Lexing}
 
-While the above pseudo code does provide an adequate and valid Lexical  Analysis of a Blazon sentence, it is quite naive.  
+While the above pseudo code provides an adequate and valid Lexical Analysis of a Blazon sentence, it is quite naive.  
 
-It is not particularly necessary to have a operate token for each LineType and Quantifier as both only occur in relation to another kind of token so can not exist in isolation.   Quantifiers only occur before a Charge so can be encompassed into an instance of a Charge and LineTypes only occur directly after a Partition or a Charge so can also be incorporated into the representation of those objects.  It is also possible to reduce the occurrences of tinctures by wrapping Tinctures of Charges into the  Charge object. 
+It is not necessary to have a token for line types and quantifiers, both only occur in relation to other tokens and can not exist in isolation.
 
-This would leave a system with only three different kinds of token which is considerably simpler than a system with five obviously it is \emph{forty percent less complex}.  This improvement isn't very hard to implement either although it does increase introduce a potential lookahead cost, where the lexer needs to check words further on in the sentence then that of the one currently being translated.  Lookahead may resolve in such a way that doesn't result in anything being found in which case looking ahead was wasted computation.  The maximum potential lookahead is the application is three words, when a quantifier is identified then the lexing function looks ahead for a Charge with a LineType and finally a Tincture. 
+Quantifiers only occur before a charge so that they can be encompassed into an instance of a charge. Line types only occur directly after a partition or a charge so can be incorporated into the representation of those objects.
+
+It is also possible to reduce the occurrences of tinctures by wrapping tinctures of charges into the charge object. 
+
+This would leave a system with only three different kinds of token, which is considerably easier to parse than a system with five, it is \emph{forty percent less complex}.  
+
+This improvement isn't very hard to implement either although it does increase introduce a potential lookahead cost, where the lexer needs to check words further on in the sentence then that of the one currently being translated. 
+
+Lookahead may resolve in such a way that doesn't result in anything being found in which case looking ahead was wasted computation. 
+
+The maximum potential cost of a look ahead is in this application is three words.  This occurs when a quantifier is identified then the lexing function looks ahead for a charge with a line type and finally a tincture. 
 
 
 
@@ -121,6 +131,6 @@ This would leave a system with only three different kinds of token which is cons
 \caption{Pseudo code for a slightly more complex lexical analysis that produces a simpler output with less tokens.}
 \end{figure}
 
-Although the algorithm is slightly more complex it simplifies parsing.  By building line types and tinctures directly into the tokens it saves having to construct the more complicated data strictures later on. 
+Although the algorithm is slightly more complex, it simplifies parsing.  By building line types and tinctures directly into the tokens, it saves the effort of having to construct the more complicated data strictures later on. 
 
 
