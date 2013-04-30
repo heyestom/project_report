@@ -48,17 +48,127 @@ Tincture objects all needed to have hex colours defined for them which was a sim
 
 \section{Partitioning Fields}
 
+Successfully partitioning fields in the graphical representation was one of the more challenging aspects of the project for several reasons.
 
 
+Any field can be partitioned by any partition therefore all the partition calculations need to be completely generic so that they can be used in all the possible situations that may arise.  This causers a large number of edge cases to occur. 
+
+Every field needs to have consistent winding, the order the points that compose the field are joined together, so that the top left ordering of Blazon isn't lost.
 
 
+\section{Implementing Field Partitioning}
+
+What needs to be achieve is a system that takes the boundaries of a field and a partition and turns this into a series of new boundaries depending upon the partition given. 
 
 
+The algorithm I devised for partitioning a field takes the boundaries of the current field and places the current partition onto it.   The algorithm then determines all the points of intersection between the field boundaries and the partition.  
+
+The points of intersection need to be grouped together in a way to generate new boundaries of the sub fields formed from the partition.  
+
+If a point of intersection lies between two corner points of the boundary then it becomes a corner of the new fields.  If an intersection occurs upon a corner of the current boundaries then it is present in both sets of boundaries generated for the new field. 
 
 
+\emph{A function that takes the boundary of the current field, the lines of partition determined by the current partition and the number of sub fields to be produced:}
+
+\begin{figure}[H]
+\begin{algorithmic}
+
+\STATE $2dPoint[] \, Boundary$
+\STATE $2dPoint[] \, lines\, of\, Partition$
+\STATE $int\, NumberOfSubFields $ \\
 
 
+\COMMENT{Create a two dimensional array, each element will hold a 2dPoint[] for the boundaries of a new sub-field}
 
+
+\STATE $New Fields = new Array$ 
+\FOR{ Every new sub-field, $NumberOfSubFields$}
+	\STATE $New Fields[]=new 2dPoint[]$
+	
+\ENDFOR
+
+\end{algorithmic}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{algorithmic}
+\STATE $CurrentFieldIndex =0$
+\FOR{Every point in $Boundary$}
+	\STATE $NextPoint =$ the next point in $Boundary$
+
+	\IF{ There an intersect between the current point and the next point}
+
+		\IF{ The point of intersect lies on the current point in the boundary}
+			
+			\STATE  $NewFields[CurrentFieldIndex] = $ the point of intersect \COMMENT{Add the point of intersection to the current sub-field}
+			\STATE $CurrentFieldIndex++$
+	        \STATE $CurrentFieldIndex \%=NumberOfSubFields$\COMMENT{Instead of going out of bounds go back to zero}
+	        \STATE $NewFields[CurrentFieldIndex] = $ the point of intersect \COMMENT{Add the point to the next sub-field} 
+		
+        \ELSIF{ The point of interest lies on $NextPoint$}
+        	\STATE Ignore and deal with next loop iteration.
+        \COMMENT {The intersect isn't on a corner}
+        \ELSE
+
+        	\STATE $NewFields[CurrentFieldIndex] = $ the current point in $Boundary$ \COMMENT{Add the current boundary point to the current sub-field}
+        	\STATE $NewFields[CurrentFieldIndex] = $ the point of intersect \COMMENT{Add the point of intersection to the current sub-field}
+			\STATE $CurrentFieldIndex++$
+	        \STATE $CurrentFieldIndex \%=NumberOfSubFields$\COMMENT{Instead of going out of bounds go back to zero}
+	        \STATE $NewFields[CurrentFieldIndex] = $ the point of intersect \COMMENT{Add the of intersection point to the next sub-field} 
+		
+		\ENDIF
+	\ELSE
+		\STATE $NewFields[CurrentFieldIndex] = $ the current point in $Boundary$ \COMMENT{Add the current boundary point to the current sub-field} \COMMENT {no intersection succoured}
+	\ENDIF
+
+\ENDFOR
+
+\FOR{Every element if  $NewFields$}
+	\STATE Set Winding \COMMENT {The boundaries must be defined so that the top left most point is the first in the array or the ordering of the fields becomes skewed} 
+
+\STATE return $NewFields$
+\ENDFOR
+\end{algorithmic}
+\caption{Pseudo code dividing a field into a number of sub-fields based upon a given partition.}
+\label{fig:redsea}
+\end{figure}
+
+
+\section{A Visualisation}
+
+What the algorithm in figure \ref{fig:redsea} is doing is dividing the field into a number of sub-fields.  This involves finding points of intersection between the partition and the field parameter.  A check needs to be made between each adjacent point of the boundary as to whether there is a point of intersection with the partition between them, if there is the the first point is assigned to the first sub-field and the second point to the second boundary with the point of intersection assigned to both. 
+
+There  is an edge case where the point of intersection lies directly on one of the boundary points, in this case the point must belong to both sub-fields.  A visual example is provided in figure \ref{fig:bounds}.
+
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=\textwidth]{graphics/images/bounds.eps}
+  \caption{UML description of a Tincture.}
+  \label{fig:bounds}
+  
+\end{figure}
+
+\section{Individual Partitions}
+The only part section of graphically representing partitioning is defining how each partition is defined before being passed to the function in figure \ref{fig:redsea}.  Each partition is obviously different graphically and generally defining the line of intersection across a field was not too complex.
+
+Bare in mind that these \emph{lines} are not drawn but are merely used to define paths and that the points of intersection are used to determine boundaries so defining a line across the entire canvas is fine as the excess is discarded. 
+
+\subsection{Fess}
+The line of intersection is defined across the entire canvas horizontally at the median Y axis value for the field. 
+\subsection{Pall}
+The line of intersection is defined across the entire canvas vertically at the median X axis value for the field. 
+\subsection{Bend}
+If the field is rectangular the line is simply defied to connect the top left to bottom right corners else the line of intersection is defined across the entire canvas at a forty five degree decline in such a way that the line intersects the median Y axis value for the field.
+\subsection{Bend Sinister}
+Exactly the same as above but at an incline instead of a decline.
+\subsection{Cross}
+A concatenation of Fess and Pall. The middle X and Y values are calculated for the field and then used for both Fess and Pall partitions.
+\subsection{Saltire}
+The same as Cross but with Bend and Bend Sinister instead of Fess and Pall.
+
+\section{Implementing Charges}
 
 
 

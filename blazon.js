@@ -796,8 +796,6 @@ function determine_new_fields(points,division_points,number_of_new_fields){
       new_fields[current_field_index].push(points[i]);
     }
   }
-
-
   //console.log("Raw fields");
   //console.log(new_fields);
   for(var x = 0; x < new_fields.length; x++)
@@ -806,7 +804,6 @@ function determine_new_fields(points,division_points,number_of_new_fields){
     new_fields[x] = set_boundries(new_fields[x]);
     new_fields[x] = remove_duplicates(new_fields[x]);
   }
-
   //console.log("New fields");
   //console.log(new_fields);
   return new_fields;

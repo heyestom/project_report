@@ -1,71 +1,73 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Basic Blazon examples.}}{10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"Vert"}}}}{10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"Or"}}}}{10}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\emph {"Azure"}}}}{10}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\emph {"Gules"}}}}{10}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces \emph {"Valid Partitions of a Field"}}}{12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"Fess"}}}}{12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"Pale"}}}}{12}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\emph {"Bend"}}}}{12}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\emph {"Bend Sinister"}}}}{12}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\emph {"Cheveron"}}}}{12}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\emph {"Pall"}}}}{12}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {\emph {"Cross"}}}}{12}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {\emph {"Saltire"}}}}{12}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces \emph {"Per Bend Gules and Azure"}.}}{13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"A single empty Field."}}}}{13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"The Field has been partitioned Per Bend"}}}}{13}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\emph {"The Topmost Field is Tinctured Gules"}}}}{13}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\emph {"The final Field is Tinctured Azure"}}}}{13}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces \emph {"Two more examples of valid Blazon sentences"}.}}{14}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"Per Bend Sinister Argent and Vert."}}}}{14}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"Per Pale Azure and Or"}}}}{14}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces \emph {"Per Bend Per Pale Sable and Argent Per Fess Or and Gules"}.}}{17}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"A single empty Field."}}}}{17}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"The Field has been partitioned Per Bend"}}}}{17}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\emph {"The Topmost Field has then been Sub partitioned Pale"}}}}{17}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\emph {"The Top Left most Sub-Field is Tinctured Sable"}}}}{17}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\emph {"The remaining Field is Sub-Partitioned Fess"}}}}{17}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\emph {"The Top Left Most Sub-Field is Tinctured Or"}}}}{17}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {\emph {"The remaining Sub-Field is Sub-Partitioned Fess"}}}}{17}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {\emph {"The final Field is Tinctured Gules"}}}}{17}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Different line types valid in Blazon.\cite {linetypes}}}{18}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces \emph {"An example of applying attitudes to a charge"}.}}{20}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"A Lion Rampant.\cite {rampant}"}}}}{20}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"A Lion Passant"\cite {passant}}}}}{20}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces \emph {"Per Pale Azure a Cross Argent and Or a Saltire Gules"}.}}{22}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces \emph {"Per Pale Argent and Gules a Bend Counter Charged."\cite {countercharge}}}}{23}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces \emph {The sides of the Field}}}{24}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces \emph {Per Bend Sinister Azure A Purse Fesswise Argent Spilling Coins to Dexter Argent Gules a Gauntlet Bendwise appaumy (an attitude meaning open palmed) Argent Bendwise sinister inverted proper.}\cite {fessways}}}{25}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces \emph {Two examples of short hand being used.}}}{26}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"Checky of eight Azure and Gules"}.}}}{26}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"Paly of sixteen Sable and Or"}}}}{26}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Basic Blazon examples.\relax }}{11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"Vert"}}}}{11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"Or"}}}}{11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\emph {"Azure"}}}}{11}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\emph {"Gules"}}}}{11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces \emph {"Valid Partitions of a Field"}\relax }}{13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"Fess"}}}}{13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"Pale"}}}}{13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\emph {"Bend"}}}}{13}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\emph {"Bend Sinister"}}}}{13}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\emph {"Cheveron"}}}}{13}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\emph {"Pall"}}}}{13}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {\emph {"Cross"}}}}{13}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {\emph {"Saltire"}}}}{13}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces \emph {"Per Bend Gules and Azure"}.\relax }}{14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"A single empty Field."}}}}{14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"The Field has been partitioned Per Bend"}}}}{14}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\emph {"The Topmost Field is Tinctured Gules"}}}}{14}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\emph {"The final Field is Tinctured Azure"}}}}{14}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \emph {"Two more examples of valid Blazon sentences"}.\relax }}{15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"Per Bend Sinister Argent and Vert."}}}}{15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"Per Pale Azure and Or"}}}}{15}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces \emph {"Per Bend Per Pale Sable and Argent Per Fess Or and Gules"}.\relax }}{18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"A single empty Field."}}}}{18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"The Field has been partitioned Per Bend"}}}}{18}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\emph {"The Topmost Field has then been Sub partitioned Pale"}}}}{18}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\emph {"The Top Left most Sub-Field is Tinctured Sable"}}}}{18}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\emph {"The remaining Field is Sub-Partitioned Fess"}}}}{18}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\emph {"The Top Left Most Sub-Field is Tinctured Or"}}}}{18}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {\emph {"The remaining Sub-Field is Sub-Partitioned Fess"}}}}{18}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {\emph {"The final Field is Tinctured Gules"}}}}{18}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Different line types valid in Blazon.\cite {linetypes}\relax }}{19}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces \emph {"An example of applying attitudes to a charge"}.\relax }}{21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"A Lion Rampant.\cite {rampant}"}}}}{21}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"A Lion Passant"\cite {passant}}}}}{21}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces \emph {"Per Pale Azure a Cross Argent and Or a Saltire Gules"}.\relax }}{23}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces \emph {"Per Pale Argent and Gules a Bend Counter Charged."\cite {countercharge}}\relax }}{24}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces \emph {The sides of the Field}\relax }}{25}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces \emph {Per Bend Sinister Azure A Purse Fesswise Argent Spilling Coins to Dexter Argent Gules a Gauntlet Bendwise appaumy (an attitude meaning open palmed) Argent Bendwise sinister inverted proper.}\cite {fessways}\relax }}{26}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces \emph {Two examples of short hand being used.}\relax }}{27}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"Checky of eight Azure and Gules"}.}}}{27}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"Paly of sixteen Sable and Or"}}}}{27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Pseudo code that produces a series of Tokens by performing Lexical analysis on a given array of Strings.}}{29}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Pseudo code for a slightly more complex lexical analysis that produces a simpler output with less tokens.}}{31}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Pseudo code that produces a series of Tokens by performing Lexical analysis on a given array of Strings.\relax }}{30}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Pseudo code for a slightly more complex lexical analysis that produces a simpler output with less tokens.\relax }}{32}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Context Free Grammar of a Meal}}{34}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Producing a Meal (easier than cooking)}}{35}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Blazon as a Context Free Grammar}}{37}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Context Free Grammar of a Meal\relax }}{35}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Producing a Meal (easier than cooking)\relax }}{36}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Blazon as a Context Free Grammar\relax }}{38}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces \emph {"The root of the tree is the implicit Field."}}}{40}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces \emph {"The first token is checked against the grammar then added to the tree array of the initial field."}}}{40}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces \emph {"The next token is a Tincture so the first element of the Bend's tree array is assigned to this Tincture"}}}{41}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces \emph {"The next token is another Tincture so the second element in the Bend's tree array is assigned to this Tincture."}}}{41}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces \emph {"The final token is a Charge as the last token was a Tincture this is a valid token. The Charge is assigned to the first element of the Or's charge array. As there are no more tokens and no more empty fields this is a valid Blazon sentence and has finished being Parsed."}}}{42}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Pseudo code for Parsing Blazon.}}{44}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces \emph {Per Bend Azure and Or a Cross Vert.}}}{45}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces \emph {"The root of the tree is the implicit Field."}\relax }}{41}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces \emph {"The first token is checked against the grammar then added to the tree array of the initial field."}\relax }}{41}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \emph {"The next token is a Tincture so the first element of the Bend's tree array is assigned to this Tincture"}\relax }}{42}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces \emph {"The next token is another Tincture so the second element in the Bend's tree array is assigned to this Tincture."}\relax }}{42}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \emph {"The final token is a Charge as the last token was a Tincture this is a valid token. The Charge is assigned to the first element of the Or's charge array. As there are no more tokens and no more empty fields this is a valid Blazon sentence and has finished being Parsed."}\relax }}{43}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Pseudo code for Parsing Blazon.\relax }}{45}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces \emph {Per Bend Azure and Or a Cross Vert.}\relax }}{46}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces For x =-300 through to x =+300}}{47}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces For x =-300 through to x =+300\relax }}{48}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Pseudo code splitting a two dimensional field based upon a given partition.\relax }}{50}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces UML description of a Tincture.\relax }}{51}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces UML description of a Tincture.\cite {linetypes}}}{48}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces UML description of a Partition\cite {linetypes}}}{49}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces UML description of a Charge.\cite {linetypes}}}{49}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Different line types valid in Blazon.\cite {linetypes}}}{49}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces UML description of a Tincture.\cite {linetypes}\relax }}{52}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces UML description of a Partition\cite {linetypes}\relax }}{53}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces UML description of a Charge.\cite {linetypes}\relax }}{53}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Different line types valid in Blazon.\cite {linetypes}\relax }}{53}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces A rendering of a very complicated Blazon sentence}}{55}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces A rendering of a very complicated Blazon sentence\relax }}{59}
