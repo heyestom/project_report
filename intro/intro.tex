@@ -1,21 +1,40 @@
 \chapter{Introduction}
 
-My project was to \emph{Write a Grammar and Parser for Blazon}. Another student project by \emph{Luke Torjussen} done the year before my own had attempted, very successfully, to produce an application that both parsed and drew representations of Blazoned coats of arms.  This prior project used a parse generator to handle the grammar, lexing and parsing of the language.  It was my objective to see if performing the parsing by hand in my own application could realise a more complete representation of Blazon.
+This project was to \emph{Write a Grammar and Parser for Blazon}. Last year Computer Science student, \emph{Luke Torjussen}, successfully produced an application that both parsed and drew representations of Blazoned coats of arms.  This prior project used a parse generator to handle the grammar, lexical analysis and parsing of the language.  
+The objective of this project was to  see if performing the parsing by hand in a web application could realise a more complete representation of Blazon.
 
-Initially then my project was entirely based in tokenising, lexing, parsing and validating Blazon sentences.  However my project grew later-on to also attempt to encompass producing a graphical representation of a parsed Blazon sentence as well as providing a plain English translation. 
+Initially the project was entirely based in tokenising, lexing, parsing and validating Blazon sentences.  However, this project grew later-on to also attempt to encompass producing graphical representations of parsed Blazon sentences as well as providing  plain English translations. 
 
 \section{Aims}
-The aim of my project was to produce an application which upon receiving a Blazon sentence would firstly validate the sentence according to the rules of the Blazon language and then produce an English translation.   
+The first aim of this project was to produce a Blazon parsing application. Upon receiving a Blazon sentence, this application would first validate the sentence according to the rules of the Blazon language and then produce an English translation.
 
-
-
+The second aim of this project was to produce graphical renderings of the Blazon sentences that the parser deemed valid. This was a secondary objective as the completeness and correctness of parsing was more important.
 
 % write a grammar and parser for the Language of Blazon.  
 
-\section{Achievable}
+\section{Attainment Goals}
+
+In order for the project to be considered complete, the application needed to be able to parse basic Blazon sentences, even if they only consisted of tinctures and partitions. If a larger subset of the language could be parsed then that was ideal.
+
+If the parsing was complete before the end of the project, as was the case, graphical representations were to be implemented depicting the shield described by the Blazon sentence.
 
 
-\section{Limitations}
+By the end of development, the project had achieved parsing a very large subset of Blazon and only very complex sentences involving partitioning of charges would be problematic.  
+
+\section{Limitations and Challenges}
+The application in its current state has several Limitations. Parsing is very complete, but complicated Blazon sentences involving partitioning charges are not handled.  
+
+The majority of the limitations lie in the graphical side of the application.  The subset of Blazon that is drawable is smaller than the subset that can be parsed.  This was due to time constraints.
+
+\section{This Document}
+This document aims to give a definition of the language of Blazon before going onto describe how the application developed parses the language.  
+
+This document will go into detail in the areas of Lexical analysis, Context Free Grammars and Parsing.  
+
+It will then go on to describe how a graphical representation of Blazon can be produced and lay out the data structures used in the implementation of the application. 
+
+Finally a thorough description of how the project was tested and then evaluated for completeness will be provided. 
+
 
 
 

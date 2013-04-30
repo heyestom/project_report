@@ -1,73 +1,90 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {1}Introduction}{7}
 \contentsline {section}{\numberline {1.1}Aims}{7}
-\contentsline {section}{\numberline {1.2}Achievable}{7}
-\contentsline {section}{\numberline {1.3}Limitations}{7}
-\contentsline {chapter}{\numberline {2}What is Blazon?}{8}
-\contentsline {section}{\numberline {2.1}The Seven Tinctures}{8}
-\contentsline {section}{\numberline {2.2}Furs}{9}
-\contentsline {section}{\numberline {2.3}Fields}{10}
-\contentsline {section}{\numberline {2.4}How to Blazon a Coat of Arms: Part One}{10}
-\contentsline {section}{\numberline {2.5}Partitioning a Field}{11}
-\contentsline {section}{\numberline {2.6}How to Blazon a Coat of Arms: Part Two}{13}
-\contentsline {section}{\numberline {2.7}Sub-Partitioning}{15}
-\contentsline {section}{\numberline {2.8}How to Blazon a Coat of Arms: Part Three}{16}
-\contentsline {section}{\numberline {2.9}Line Types}{18}
-\contentsline {section}{\numberline {2.10}Charges}{19}
-\contentsline {section}{\numberline {2.11}Attitudes}{20}
-\contentsline {section}{\numberline {2.12}The Rule of Tincture}{21}
-\contentsline {section}{\numberline {2.13}How to Blazon a Coat of Arms: Part Four}{21}
-\contentsline {section}{\numberline {2.14}Counter-Charging}{23}
-\contentsline {section}{\numberline {2.15}Directions and Sides}{24}
-\contentsline {section}{\numberline {2.16}Overall}{26}
-\contentsline {section}{\numberline {2.17}Variations}{26}
-\contentsline {chapter}{\numberline {3}Lexical Analysis}{28}
-\contentsline {section}{\numberline {3.1}What is Lexical Analysis?}{28}
-\contentsline {section}{\numberline {3.2}Lexical Analysis of Blazon}{28}
-\contentsline {section}{\numberline {3.3}More Involved Lexing}{30}
-\contentsline {chapter}{\numberline {4}Defining a Grammar for Blazon}{33}
-\contentsline {section}{\numberline {4.1}What is a Grammar?}{33}
-\contentsline {section}{\numberline {4.2}Context free Grammars}{34}
-\contentsline {subsection}{\numberline {4.2.1}An Example Context Free Grammar}{34}
-\contentsline {section}{\numberline {4.3}Context Free Blazon}{36}
-\contentsline {chapter}{\numberline {5}Parsing}{39}
-\contentsline {section}{\numberline {5.1}Building Parse Trees}{39}
-\contentsline {section}{\numberline {5.2}Parsing Blazon}{39}
-\contentsline {section}{\numberline {5.3}An Example of Parsing Blazon}{40}
-\contentsline {section}{\numberline {5.4}Error Reporting}{43}
-\contentsline {section}{\numberline {5.5}A Parsing Algorithm}{44}
-\contentsline {section}{\numberline {5.6}Tree Navigation and Results}{46}
-\contentsline {chapter}{\numberline {6}Graphical Representations}{47}
-\contentsline {section}{\numberline {6.1}Adding a Graphical Description to Data Structures}{47}
-\contentsline {section}{\numberline {6.2}Drawing a Shield}{48}
-\contentsline {section}{\numberline {6.3}Drawing Tinctures}{48}
-\contentsline {section}{\numberline {6.4}Partitioning Fields}{48}
-\contentsline {section}{\numberline {6.5}Implementing Field Partitioning}{49}
-\contentsline {section}{\numberline {6.6}A Visualisation}{51}
-\contentsline {section}{\numberline {6.7}Individual Partitions}{51}
-\contentsline {subsection}{\numberline {6.7.1}Fess}{52}
-\contentsline {subsection}{\numberline {6.7.2}Pall}{52}
-\contentsline {subsection}{\numberline {6.7.3}Bend}{52}
-\contentsline {subsection}{\numberline {6.7.4}Bend Sinister}{52}
-\contentsline {subsection}{\numberline {6.7.5}Cross}{52}
-\contentsline {subsection}{\numberline {6.7.6}Saltire}{52}
-\contentsline {section}{\numberline {6.8}Implementing Charges}{52}
-\contentsline {section}{\numberline {6.9}A Third Party Library}{54}
-\contentsline {chapter}{\numberline {7}Data Structures}{55}
-\contentsline {section}{\numberline {7.1}Tinctures}{55}
-\contentsline {section}{\numberline {7.2}Partitions}{56}
-\contentsline {section}{\numberline {7.3}Charge}{56}
-\contentsline {section}{\numberline {7.4}Linetype}{56}
-\contentsline {chapter}{\numberline {8}Design}{57}
-\contentsline {chapter}{\numberline {9}Development}{59}
-\contentsline {section}{\numberline {9.1}Background Research}{59}
-\contentsline {section}{\numberline {9.2}Prototypes}{59}
-\contentsline {section}{\numberline {9.3}Development of the Main Application}{60}
-\contentsline {section}{\numberline {9.4}Graphical Representation}{60}
-\contentsline {chapter}{\numberline {10}Testing}{61}
-\contentsline {section}{\numberline {10.1}Black Box Testing}{61}
-\contentsline {section}{\numberline {10.2}Regression Testing}{62}
-\contentsline {section}{\numberline {10.3}Blazon Seeking Missile}{63}
-\contentsline {section}{\numberline {10.4}Application Level Testing}{64}
-\contentsline {section}{\numberline {10.5}Testing for Completeness of the Blazon Subset}{64}
-\contentsline {section}{\numberline {10.6}Bench Marking}{64}
+\contentsline {section}{\numberline {1.2}Attainment Goals}{7}
+\contentsline {section}{\numberline {1.3}Limitations and Challenges}{8}
+\contentsline {section}{\numberline {1.4}This Document}{8}
+\contentsline {chapter}{\numberline {2}What is Blazon?}{9}
+\contentsline {section}{\numberline {2.1}The Seven tinctures}{9}
+\contentsline {section}{\numberline {2.2}Furs}{10}
+\contentsline {section}{\numberline {2.3}Fields}{11}
+\contentsline {section}{\numberline {2.4}How to Blazon a Coat of Arms: Part One}{11}
+\contentsline {section}{\numberline {2.5}Partitioning a field}{12}
+\contentsline {section}{\numberline {2.6}How to Blazon a Coat of Arms: Part Two}{15}
+\contentsline {section}{\numberline {2.7}Sub-Partitioning}{17}
+\contentsline {section}{\numberline {2.8}How to Blazon a Coat of Arms: Part Three}{18}
+\contentsline {section}{\numberline {2.9}Line Types}{20}
+\contentsline {section}{\numberline {2.10}Charges}{21}
+\contentsline {section}{\numberline {2.11}Attitudes}{22}
+\contentsline {section}{\numberline {2.12}The Rule of tincture}{23}
+\contentsline {section}{\numberline {2.13}How to Blazon a Coat of Arms: Part Four}{23}
+\contentsline {section}{\numberline {2.14}Counter-Charging}{25}
+\contentsline {section}{\numberline {2.15}Directions and Sides}{26}
+\contentsline {section}{\numberline {2.16}Overall}{28}
+\contentsline {section}{\numberline {2.17}Variations}{28}
+\contentsline {chapter}{\numberline {3}Lexical Analysis}{30}
+\contentsline {section}{\numberline {3.1}What is Lexical Analysis?}{30}
+\contentsline {section}{\numberline {3.2}Lexical Analysis of Blazon}{30}
+\contentsline {section}{\numberline {3.3}More Involved Lexing}{32}
+\contentsline {chapter}{\numberline {4}Defining a Grammar for Blazon}{35}
+\contentsline {section}{\numberline {4.1}What is a Grammar?}{35}
+\contentsline {section}{\numberline {4.2}Context free Grammars}{36}
+\contentsline {subsection}{\numberline {4.2.1}An Example Context Free Grammar}{36}
+\contentsline {section}{\numberline {4.3}Context Free Blazon}{38}
+\contentsline {chapter}{\numberline {5}Parsing}{41}
+\contentsline {section}{\numberline {5.1}Building Parse Trees}{41}
+\contentsline {section}{\numberline {5.2}Parsing Blazon}{41}
+\contentsline {section}{\numberline {5.3}An Example of Parsing Blazon}{42}
+\contentsline {section}{\numberline {5.4}Error Reporting}{45}
+\contentsline {section}{\numberline {5.5}A Parsing Algorithm}{46}
+\contentsline {section}{\numberline {5.6}Tree Navigation and Results}{48}
+\contentsline {chapter}{\numberline {6}Graphical Representations}{49}
+\contentsline {section}{\numberline {6.1}Adding a Graphical Description to Data Structures}{49}
+\contentsline {section}{\numberline {6.2}Drawing a Shield}{50}
+\contentsline {section}{\numberline {6.3}Drawing Tinctures}{50}
+\contentsline {section}{\numberline {6.4}Partitioning Fields}{50}
+\contentsline {section}{\numberline {6.5}Implementing Field Partitioning}{51}
+\contentsline {section}{\numberline {6.6}A Visualisation}{53}
+\contentsline {section}{\numberline {6.7}Individual Partitions}{53}
+\contentsline {subsection}{\numberline {6.7.1}Fess}{54}
+\contentsline {subsection}{\numberline {6.7.2}Pall}{54}
+\contentsline {subsection}{\numberline {6.7.3}Bend}{54}
+\contentsline {subsection}{\numberline {6.7.4}Bend Sinister}{54}
+\contentsline {subsection}{\numberline {6.7.5}Cross}{54}
+\contentsline {subsection}{\numberline {6.7.6}Saltire}{54}
+\contentsline {section}{\numberline {6.8}Implementing Charges}{54}
+\contentsline {section}{\numberline {6.9}A Third Party Library}{56}
+\contentsline {chapter}{\numberline {7}Data Structures}{57}
+\contentsline {section}{\numberline {7.1}Tinctures}{57}
+\contentsline {section}{\numberline {7.2}Partitions}{58}
+\contentsline {section}{\numberline {7.3}Charge}{58}
+\contentsline {section}{\numberline {7.4}Linetype}{58}
+\contentsline {chapter}{\numberline {8}Design}{59}
+\contentsline {section}{\numberline {8.1}A Functional Layout}{61}
+\contentsline {section}{\numberline {8.2}Feedback to the User}{61}
+\contentsline {section}{\numberline {8.3}Maintaining the Blazon Theme}{62}
+\contentsline {section}{\numberline {8.4}The English Description}{62}
+\contentsline {section}{\numberline {8.5}Ace Editor}{62}
+\contentsline {chapter}{\numberline {9}Development}{63}
+\contentsline {section}{\numberline {9.1}Background Research}{63}
+\contentsline {section}{\numberline {9.2}Prototypes}{63}
+\contentsline {section}{\numberline {9.3}Development of the Main Application}{64}
+\contentsline {section}{\numberline {9.4}Graphical Representation}{64}
+\contentsline {chapter}{\numberline {10}Testing and Evaluation}{65}
+\contentsline {section}{\numberline {10.1}Black Box Testing}{65}
+\contentsline {section}{\numberline {10.2}Regression Testing}{66}
+\contentsline {section}{\numberline {10.3}Blazon Seeking Missile}{67}
+\contentsline {section}{\numberline {10.4}Application Level Testing}{68}
+\contentsline {section}{\numberline {10.5}Testing for Completeness of the Blazon Subset}{68}
+\contentsline {section}{\numberline {10.6}Evaluating though Bench Marking}{69}
+\contentsline {subsection}{\numberline {10.6.1}Testing Tinctures}{69}
+\contentsline {subsection}{\numberline {10.6.2}Testing Partitions}{69}
+\contentsline {subsection}{\numberline {10.6.3}Testing Sub-Partitions}{70}
+\contentsline {subsection}{\numberline {10.6.4}Testing Charges}{71}
+\contentsline {subsection}{\numberline {10.6.5}Testing Multiple Charges}{71}
+\contentsline {subsection}{\numberline {10.6.6}Testing Semi-Formal Charges}{72}
+\contentsline {subsection}{\numberline {10.6.7}Performance}{72}
+\contentsline {chapter}{\numberline {11}Conclusion}{73}
+\contentsline {section}{\numberline {11.1}Attainment}{73}
+\contentsline {section}{\numberline {11.2}Continuing the Project}{73}
+\contentsline {section}{\numberline {11.3}Final Notes}{74}
