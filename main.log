@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.16)  30 APR 2013 03:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=latex 2013.4.16)  30 APR 2013 05:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -222,11 +222,11 @@ File: ./logo.eps Graphic file (type eps)
 
 ] (./abstract/abstract.tex [1]) (./main.toc [1
 
-])
+] [2])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- [2] [3]
+ [3]
 (./main.lof [4
 
 ])
@@ -475,34 +475,55 @@ Overfull \vbox (8.68323pt too high) has occurred while \output is active []
 
 [50]
 File: graphics/images/bounds.eps Graphic file (type eps)
- <graphics/images/bounds.eps>) (./datastructures/data.tex [51]
+ <graphics/images/bounds.eps> [51] [52]
+File: graphics/images/bend.eps Graphic file (type eps)
+ <graphics/images/bend.eps>
+File: graphics/images/bendcharge.eps Graphic file (type eps)
+
+<graphics/images/bendcharge.eps>
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 177--181
+[][]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
+
+ []
+
+File: graphics/images/thickness.eps Graphic file (type eps)
+<graphics/images/thickness.eps> [53]) (./datastructures/data.tex [54]
 Chapter 7.
 File: datastructures/images/tincture.eps Graphic file (type eps)
 <datastructures/images/tincture.eps>
 File: datastructures/images/partition.eps Graphic file (type eps)
  <datastructures/images/partition.eps>
-[52
+[55
 
 ]
 File: datastructures/images/charge.eps Graphic file (type eps)
  <datastructures/images/charge.eps>
 File: datastructures/images/linetype.eps Graphic file (type eps)
  <datastructures/images/linetype.eps>)
-(./design/design.tex [53]
+(./design/design.tex [56]
 Chapter 8.
-) (./development/dev.tex [54
+File: design/images/overall.eps Graphic file (type eps)
+<design/images/overall.eps>) (./development/dev.tex [57
 
 ]
+Overfull \vbox (27.43616pt too high) has occurred while \output is active []
+
+
+[58]
 Chapter 9.
-[55
+[59
 
-]) (./testing/testing.tex [56]
+]) (./testing/testing.tex [60]
 Chapter 10.
-[57
+[61
 
-] [58]
+] [62]
 File: testing/images/bigmess.eps Graphic file (type eps)
- <testing/images/bigmess.eps> [59]) (./bib/bib.tex [60]
+ <testing/images/bigmess.eps> [63]) (./bib/bib.tex [64]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
 []\OT1/cmr/m/n/12 Mark E. Shoul-son The py-Bla-zon wiki,
  []
@@ -549,7 +570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--40
 []\OT1/cmr/m/n/12 Adapted from: Phe-lan and Vanor , March 1 1989,
  []
 
-) [61
+) [65
 
 ] (./main.aux)
 
@@ -557,12 +578,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3044 strings out of 493486
- 43270 string characters out of 3143549
+ 3056 strings out of 493486
+ 43484 string characters out of 3143549
  108194 words of memory out of 3000000
- 6246 multiletter control sequences out of 15000+200000
+ 6254 multiletter control sequences out of 15000+200000
  11117 words of font info for 39 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  36i,8n,38p,920b,678s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on main.dvi (63 pages, 127344 bytes).
+Output written on main.dvi (67 pages, 136608 bytes).

@@ -60,14 +60,19 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces \emph {Per Bend Azure and Or a Cross Vert.}\relax }}{46}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces For x =-300 through to x =+300\relax }}{48}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Pseudo code splitting a two dimensional field based upon a given partition.\relax }}{50}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Pseudo code dividing a field into a number of sub-fields based upon a given partition.\relax }}{50}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces UML description of a Tincture.\relax }}{51}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces The majority of the functionality for defining the line of partition for \emph {Bend} and the Charge \emph {Bend} is the same.\relax }}{53}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\emph {"A Field partitioned Per Bend."}}}}{53}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\emph {"A Field Charged Per Bend"}}}}{53}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces A visualisation of defining a path offset from where the equivalent partition would be by a thickness\relax }}{54}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces UML description of a Tincture.\cite {linetypes}\relax }}{52}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces UML description of a Partition\cite {linetypes}\relax }}{53}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces UML description of a Charge.\cite {linetypes}\relax }}{53}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Different line types valid in Blazon.\cite {linetypes}\relax }}{53}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces UML description of a Tincture.\cite {linetypes}\relax }}{55}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces UML description of a Partition\cite {linetypes}\relax }}{56}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces UML description of a Charge.\cite {linetypes}\relax }}{56}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Different line types valid in Blazon.\cite {linetypes}\relax }}{56}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces A visualisation of defining a path offset from where the equivalent partition would be by a thickness\relax }}{58}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces A rendering of a very complicated Blazon sentence\relax }}{59}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces A rendering of a very complicated Blazon sentence\relax }}{63}

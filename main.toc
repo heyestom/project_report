@@ -44,21 +44,30 @@
 \contentsline {section}{\numberline {6.4}Partitioning Fields}{48}
 \contentsline {section}{\numberline {6.5}Implementing Field Partitioning}{49}
 \contentsline {section}{\numberline {6.6}A Visualisation}{51}
-\contentsline {chapter}{\numberline {7}Data Structures}{52}
-\contentsline {section}{\numberline {7.1}Tinctures}{52}
-\contentsline {section}{\numberline {7.2}Partitions}{53}
-\contentsline {section}{\numberline {7.3}Charge}{53}
-\contentsline {section}{\numberline {7.4}Linetype}{53}
-\contentsline {chapter}{\numberline {8}Design}{54}
-\contentsline {chapter}{\numberline {9}Development}{55}
-\contentsline {section}{\numberline {9.1}Background Research}{55}
-\contentsline {section}{\numberline {9.2}Prototypes}{55}
-\contentsline {section}{\numberline {9.3}Development of the Main Application}{56}
-\contentsline {section}{\numberline {9.4}Graphical Representation}{56}
-\contentsline {chapter}{\numberline {10}Testing}{57}
-\contentsline {section}{\numberline {10.1}Black Box Testing}{57}
-\contentsline {section}{\numberline {10.2}Regression Testing}{58}
-\contentsline {section}{\numberline {10.3}Blazon Seeking Missile}{59}
-\contentsline {section}{\numberline {10.4}Application Level Testing}{60}
-\contentsline {section}{\numberline {10.5}Testing for Completeness of the Blazon Subset}{60}
-\contentsline {section}{\numberline {10.6}Bench Marking}{60}
+\contentsline {section}{\numberline {6.7}Individual Partitions}{51}
+\contentsline {subsection}{\numberline {6.7.1}Fess}{52}
+\contentsline {subsection}{\numberline {6.7.2}Pall}{52}
+\contentsline {subsection}{\numberline {6.7.3}Bend}{52}
+\contentsline {subsection}{\numberline {6.7.4}Bend Sinister}{52}
+\contentsline {subsection}{\numberline {6.7.5}Cross}{52}
+\contentsline {subsection}{\numberline {6.7.6}Saltire}{52}
+\contentsline {section}{\numberline {6.8}Implementing Charges}{52}
+\contentsline {section}{\numberline {6.9}A Third Party Library}{54}
+\contentsline {chapter}{\numberline {7}Data Structures}{55}
+\contentsline {section}{\numberline {7.1}Tinctures}{55}
+\contentsline {section}{\numberline {7.2}Partitions}{56}
+\contentsline {section}{\numberline {7.3}Charge}{56}
+\contentsline {section}{\numberline {7.4}Linetype}{56}
+\contentsline {chapter}{\numberline {8}Design}{57}
+\contentsline {chapter}{\numberline {9}Development}{59}
+\contentsline {section}{\numberline {9.1}Background Research}{59}
+\contentsline {section}{\numberline {9.2}Prototypes}{59}
+\contentsline {section}{\numberline {9.3}Development of the Main Application}{60}
+\contentsline {section}{\numberline {9.4}Graphical Representation}{60}
+\contentsline {chapter}{\numberline {10}Testing}{61}
+\contentsline {section}{\numberline {10.1}Black Box Testing}{61}
+\contentsline {section}{\numberline {10.2}Regression Testing}{62}
+\contentsline {section}{\numberline {10.3}Blazon Seeking Missile}{63}
+\contentsline {section}{\numberline {10.4}Application Level Testing}{64}
+\contentsline {section}{\numberline {10.5}Testing for Completeness of the Blazon Subset}{64}
+\contentsline {section}{\numberline {10.6}Bench Marking}{64}

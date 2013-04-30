@@ -169,9 +169,34 @@ A concatenation of Fess and Pall. The middle X and Y values are calculated for t
 The same as Cross but with Bend and Bend Sinister instead of Fess and Pall.
 
 \section{Implementing Charges}
+The graphical implementation of Charges mirrored the implementation of each individual partition's line of intersection, see figure \ref{fig:charge} except instead of being a line a bar needed to be drawn instead.  
+
+Presenting an appropriately scaled charge for the size of the field presented some of a challenge.  A thickness value for the charge was computed from the attributes of the field.  The thinness for a charge was defined as the lesser of either the difference in the maximum Y value for the field and the minimum Y value for the field or the equivalent on the X axis divided by three. 
+
+\begin{figure}[H]
+\subfigure[\emph{"A Field partitioned Per Bend."}]{\includegraphics[width=0.5\textwidth]{graphics/images/bend.eps}}
+\hfill
+\subfigure[\emph{"A Field Charged Per Bend"}]{\includegraphics[width=0.5\textwidth]{graphics/images/bendcharge.eps}}
+\hfill
+\caption{The majority of the functionality for defining the line of partition for \emph{Bend} and the Charge \emph{Bend} is the same.}
+\label{fig:charge}
+\end{figure}
 
 
+Only a little adapting was required to re-using the functionality from each Partitions definition to render a charge.  Firstly the intersection points needed to be calculated as before then these points were included in a Canvas path that included also used the intersect points plus and minus the thickness value.  This path was then passed to a Tinctures's Draw function and filled accordingly. 
 
+
+\begin{figure}[H]
+  \centering
+    \includegraphics[width=\textwidth]{graphics/images/thickness.eps}
+  \caption{A visualisation of defining a path offset from where the equivalent partition would be by a thickness}
+  \label{fig:thickness}
+  
+\end{figure}
+
+
+\section{A Third Party Library}
+To calculate line intersections a third party library\cite{2dforyou} written by \emph{Kevin Lindsey} was utilised.  The library features a whole suit of useful functions for performing two dimensional geometry. The reasoning behind using a library over implementing the behaviour internally were sane as there were time constrains on the application development and the library has been actively maintained since 2002 which suggest a high likeliness that it is properly implement and tested.
 
 
 
