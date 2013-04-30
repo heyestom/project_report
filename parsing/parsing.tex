@@ -1,29 +1,29 @@
 \chapter{Parsing}
 
-After Lexical Analysis is complete and the input string has been tokenised the next step is to generate a parse tree.  Parsers produce a data structure that takes into account all the details of the language defied in its grammar and also attempt to perform error handing.
+After lexical analysis is complete and the input string has been tokenised, the next step is to generate a parse tree.  Parsers produce a data structure that takes into account all the details of the language defined in its grammar and also attempts to perform error handing.
 
 \section{Building Parse Trees}
 
-A parser takes the output from lexical analysis and turns it into a tree data structure.  This tree structure enforces properties not apparent from just a linear sequence of tokens such as associativity.  The structure also validates the input by checking it against the grammar for the language.  
+A parser takes the output from lexical analysis and turns it into a tree data structure.  This tree structure enforces properties not apparent from just a linear sequence of tokens, such as associativity.  The structure also validates the input by checking it against the grammar for the language.  
 
-One of the features of a user friendly parser is reporting errors that the user has made in the input to the application to assist in fixing the input.
+One of the features of a user friendly parser is its ability to report errors that a user has made within the input of the application. to assist in addressing the isses of the erroneous input.
 
 
 \section{Parsing Blazon}
 
-Parsing Blazon involves taking the tokens generated form Lexical analysis and producing a well formed data structure that checks whether the input conforms to the defied grammar, figure \ref{fig:grammar}, or not and attempts to report the reason behind why the input may be erroneous.
+Parsing Blazon involves taking the tokens generated from the lexical analysis and producing a well formed data structure that checks whether the input conforms to the defined grammar or not, figure \ref{fig:grammar}.  It then attempts to report the reason behind why the input may be erroneous.
 
-Blazon lends it self very well to a top down, left to right parsing method because of the way the language is defined. Fields are defined and Tinctured from the top-left most point downwards and mirroring this approach in parsing makes for a nice parallel. 
+Blazon lends it self very well to a top down, left to right parsing method because of the way the language is defined. Fields are defined and tinctured from the top-left most point downwards. Mirroring this approach in parsing makes for a nice parallel. 
 
-The output from the lexical analysis is of a fairly high level because of the more advanced lexing approach taken which wrapped Line Types, Quantifiers and Tinctures into other objects when appropriate.  
+The output from the lexical analysis is of a fairly high level of abstraction because of the more advanced lexing approach taken, which wrapped line types, quantifiers and tinctures into other objects when appropriate.  
 
-To build the data structure itself each of the objects to be instantiated have inbuilt class variables to allows them to act as nodes in a tree. 
+To build the data structure, each of the objects to be used as nodes in the parse tree have to contain inbuilt class variables to allow them to act as nodes in a tree. 
 
-Partitions all have an array, the size of which is determined by the number of fields to be created for the particular type of partition.  Tinctures have an array of Charges so that they can have multiple charges placed upon them. 
+Partitions all have an array, the size of which is determined by the number of fields to be created for the particular type of partition.  Tinctures have an array of charges so that they can have multiple charges placed upon them. 
 
-As Blazon sentences all implicitly start with an empty field that encompass the entire shied this is where the parser and parse tree will start.  In the implementation the implicit field is represented by a partition which produces a single field,  an \emph{Escutcheon}. 
+As Blazon sentences all implicitly start with an empty field that encompass the entire shied, this is where the parser will start to construct the  parse tree.  In the application, the implicit field is represented by a partition which produces a single field, an \emph{Escutcheon}. 
 
-The parser then takes the first token initially a field, according to the grammar the only valid operations that can be performed upon a field are Tincturing and Partitioning, therefore the parser checks whether this token is either a Tincture or a Partition and if the token is either of them it is added to the initial field accordingly.  
+The parser then takes the first token, initially a field.  According to the grammar the only valid operations that can be performed upon a field are tincturing and partitioning. The parser then checks whether this token is either a tincture or a partition and if the token is either of them it is added to the initial field accordingly.  
 
 This process is repeated until either there are no more tokens left to parse, no more space in the tree structure exists, upon a valid Blazon sentence, both. 
 
@@ -76,18 +76,19 @@ The tokens generated by Lexical analysis would be, \emph{Partition (Bend), Tinct
 
 \section{Error Reporting}
 
-If an errors is detected whilst building the Parse tree the Blazon sentence is invalid.  However the end user would benefit greatly if the application could evaluate further as to why the input was erroneous.  Depending upon where in the parse function the error is detected will change what potential errors could have occurred.  The more error reporting that the parser performs the easier it is for the user to correct their mistake. 
+If an error is detected while building the Parse tree the Blazon sentence is invalid.  However the end user would benefit greatly if the application could evaluate further as to why the input was erroneous.  Depending upon where in the parse function the error is detected, will change what potential errors could have occurred.
+The more error reporting that the parser performs the easier it is for the user to correct their mistake. 
 
-The obvious error to address is that of an incomplete Blazon sentence.  If there are no more tokens but the tree has empty nodes in it then the Blazon sentence is invalid because at least one field has yet to be tinctured.  If the inverse is true and there is no space in the tree for the next Token then too many fields have been defined.
+The obvious error to address is that of an incomplete Blazon sentence.  If there are no more tokens but the tree has empty nodes, the Blazon sentence is invalid because at least one field has yet to be tinctured.  If the inverse is true and there is no space in the tree for the next token, too many fields have been defined.
 
-The rule of tincture is also enforceable during parsing by checking the parent node's Tincture type against the potential Charge's Tincture.   It is also possible to check that a charge is not placed upon an empty field. 
+The rule of tincture is also enforceable during parsing by checking the parent node's Tincture type against the potential charge's tincture.   It is also possible to check that a charge is not placed upon an empty field. 
 
-The most appropriate way to deliver feedback to the user regarding an error is in such a way that they must give it attention.  The application utilises JavaScript alerts for error reporting as the user must acknowledge them before continuing as they are modal, they hold the focus of the browser until acknowledged. 
+The most appropriate way to deliver feedback to the user regarding an error is in such a way that they must give it attention.  The application utilises JavaScript alerts for error reporting as the user must acknowledge them before continuing. They are modal, they hold the focus of the browser until acknowledged. 
 
 
 \section{A Parsing Algorithm}
 
-Pseudo code for implementation of the parsing function used in the web application is given below, in Figure \ref{fig:parse}.  As the implementation was written in JavaScript arrays are objects and upon removing the first element in an array the index of reaming elements are all decremented by one implicitly. 
+Pseudo code for implementation of the parsing function used in the web application is given below, in Figure \ref{fig:parse}.  As the implementation was written in JavaScript, arrays are objects.  Upon removing the first element in an array, the index of reaming elements are all decremented by one implicitly. 
 
 \begin{figure}[H]
 \begin{algorithmic}[1]
@@ -141,8 +142,8 @@ Pseudo code for implementation of the parsing function used in the web applicati
 
 \section{Tree Navigation and Results}
 
-Once the parse tree has been constructed a English description of the shield that was described by the Blazon sentence can be output. 
-All of the main data structures contain an English description of what they represent in the Blazon.  Navigating through the tree in the correct order and queering all of the nodes in order of being visited is all that needs to be done.  The tree was built from left to right so needs to be navigated in that order as well.  
+Once the parse tree has been constructed, an English description of the shield that was described by the Blazon sentence can be output. 
+All of the main data structures contain an English description of what they represent in Blazon.  Navigating through the tree in the correct order and querying  all of the nodes in order of being visited is all that needs to be done.  The tree was built from left to right so it also needs to be navigated in that order.  
 
 
 The English output from the Blazon Sentence presented in \ref{fig:tree} generated is; \emph{"A shield split diagonally from upper left to lower right , coloured blue, coloured gold / yellow with 1 green solid + shape"}.  Which, although a little verbose, is a fairly accurate description of the shield from \ref{fig:result}.  
